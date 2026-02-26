@@ -1,0 +1,24 @@
+graph TD
+    User[用户操作] --> Mode{调用方式?}
+    
+    Mode -- loadAd --> Load1[发起请求]
+    Load1 -- 失败 --> Fail1[回调 onAdFailed -> 结束]
+    Load1 -- 成功 --> Success1[回调 onAdLoaded -> 等待]
+    Success1 --> Show[用户调用 showAd]
+    
+    Mode -- loadAndShow --> Load2[发起请求]
+    Load2 -- 失败 --> AutoFail[回调 onAdFailed]
+    AutoFail -- autoRefresh=true --> Retry[启动计时器重试] --> Load2
+    Load2 -- 成功 --> AutoSuccess[回调 onAdLoaded]
+    AutoSuccess --> AutoShow[自动调用 showAd]
+    
+    Show --> StartTimer{autoRefresh=true?}
+    AutoShow --> StartTimer
+    
+    StartTimer -- Yes --> Timer[启动计时器]
+    StartTimer -- No --> DisplayOnly[仅展示不刷新]
+    
+    Timer -- 到期 --> LoopLoad[自动 loadAd]
+    LoopLoad -- 成功 --> LoopShow[自动 showAd] --> Timer
+    LoopLoad -- 失败 --> LoopFail[回调 onAdFailed]
+    LoopFail -- autoRefresh=true --> RetryLoop[启动计时器重试] --> LoopLoad

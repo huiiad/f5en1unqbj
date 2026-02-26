@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+id banner_container
+id btn_banner_activity
+id btn_compose_activity
+id btn_init
+id btn_init_manifest
+id btn_load_and_show_banner
+id btn_load_banner
+id btn_native_activity
+id btn_show_banner
+id btn_video_activity
+id main_banner_container
+id tv_log
+id tv_logs
+layout activity_banner
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name

@@ -1,0 +1,4 @@
+com.ssp.demo.test.demo_app-androidTest-0 /Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/build/generated/res/resValues/androidTest/debug
+com.ssp.demo.test.demo_app-mergeDebugAndroidTestResources-1 /Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.ssp.demo.test.demo_app-mergeDebugAndroidTestResources-2 /Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.ssp.demo.test.demo_app-merged_res-3 /Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/build/intermediates/merged_res/debugAndroidTest

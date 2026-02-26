@@ -1,0 +1,180 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ssp.demo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="31" />
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:7:5-79
+11-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:7:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:5-67
+12-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-79
+13-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-76
+14-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-73
+15
+16    <permission
+16-->[androidx.core:core:1.9.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/6b8f70eacaea457f2c8ec8c1d2a003d3/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+17        android:name="com.ssp.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.9.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/6b8f70eacaea457f2c8ec8c1d2a003d3/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.9.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/6b8f70eacaea457f2c8ec8c1d2a003d3/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.ssp.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.9.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/6b8f70eacaea457f2c8ec8c1d2a003d3/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.9.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/6b8f70eacaea457f2c8ec8c1d2a003d3/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:4:5-38:19
+23        android:allowBackup="true"
+23-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:5:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.9.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/6b8f70eacaea457f2c8ec8c1d2a003d3/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+25        android:extractNativeLibs="false"
+26        android:icon="@mipmap/ic_launcher"
+26-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:6:9-43
+27        android:label="SSP SDK Demo"
+27-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:7:9-37
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:8:9-54
+29        android:supportsRtl="true"
+29-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:9:9-35
+30        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+30-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:11:9-65
+31        android:usesCleartextTraffic="true" >
+31-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:10:9-44
+32
+33        <!-- Configure App ID via Manifest -->
+34        <meta-data
+34-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:14:9-85
+35            android:name="com.ssp.sdk.APP_ID"
+35-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:14:20-53
+36            android:value="com.ssp.demo" />
+36-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:14:54-82
+37
+38        <activity
+38-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:16:9-24:20
+39            android:name="com.ssp.demo.MainActivity"
+39-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:17:13-41
+40            android:exported="true" >
+40-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:18:13-36
+41            <intent-filter>
+41-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:19:13-23:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:20:17-69
+42-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:20:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:22:17-77
+44-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:22:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity
+47-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:26:9-28:58
+48            android:name="com.ssp.demo.BannerActivity"
+48-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:27:13-43
+49            android:parentActivityName="com.ssp.demo.MainActivity" />
+49-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:28:13-55
+50        <activity
+50-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:29:9-31:58
+51            android:name="com.ssp.demo.NativeActivity"
+51-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:30:13-43
+52            android:parentActivityName="com.ssp.demo.MainActivity" />
+52-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:31:13-55
+53        <activity
+53-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:32:9-34:58
+54            android:name="com.ssp.demo.VideoActivity"
+54-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:33:13-42
+55            android:parentActivityName="com.ssp.demo.MainActivity" />
+55-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:34:13-55
+56        <activity
+56-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:35:9-37:58
+57            android:name="com.ssp.demo.ComposeDemoActivity"
+57-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:36:13-48
+58            android:parentActivityName="com.ssp.demo.MainActivity" />
+58-->/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/src/main/AndroidManifest.xml:37:13-55
+59        <activity
+59-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-16:74
+60            android:name="com.ssp.sdk.ad.SspFullScreenVideoActivity"
+60-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-69
+61            android:configChanges="orientation|screenSize|keyboardHidden"
+61-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-74
+62            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+62-->[:ssp_sdk] /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-71
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.2.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/ffc9f230be04c872a4d3d8344b79f804/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.2.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/ffc9f230be04c872a4d3d8344b79f804/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+66            android:authorities="com.ssp.demo.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.2.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/ffc9f230be04c872a4d3d8344b79f804/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.2.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/ffc9f230be04c872a4d3d8344b79f804/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.2.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/ffc9f230be04c872a4d3d8344b79f804/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.2.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/ffc9f230be04c872a4d3d8344b79f804/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.2.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/ffc9f230be04c872a4d3d8344b79f804/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/8be0a2315d83ac5cc588858b646ae154/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/8be0a2315d83ac5cc588858b646ae154/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/8be0a2315d83ac5cc588858b646ae154/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+76                android:value="androidx.startup" />
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+77        </provider>
+78
+79        <receiver
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+80            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+81            android:directBootAware="false"
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+82            android:enabled="true"
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+83            android:exported="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+84            android:permission="android.permission.DUMP" >
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+86                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+89                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+92                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+95                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/star/Library/Android/gradle/gradle-8.1.1/caches/transforms-3/3adce4beab7a9ef561125662a0269d94/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+96            </intent-filter>
+97        </receiver>
+98    </application>
+99
+100</manifest>

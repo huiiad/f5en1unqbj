@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.ssp.demo.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.string.app_name"
+            file="${:demo_app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="2"
+            column="13"
+            startOffset="24"
+            endLine="2"
+            endColumn="28"
+            endOffset="39"/>
+        <entry
+            name="model"
+            string="id[btn_native_activity(U),btn_load_banner(U),btn_banner_activity(U),btn_compose_activity(D),main_banner_container(U),banner_container(U),btn_load_and_show_banner(U),tv_logs(U),btn_init_manifest(U),btn_init(U),tv_log(U),btn_show_banner(U),btn_video_activity(U)],layout[activity_banner(U),activity_main(U)],mipmap[ic_launcher_round(U),ic_launcher(U)],string[app_name(D)],style[Theme_AppCompat_Light_NoActionBar(R)];e^4;;;"/>
+    </map>
+
+</incidents>

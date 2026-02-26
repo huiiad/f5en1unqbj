@@ -1,0 +1,744 @@
+# compiler: R8
+# compiler_version: 8.1.56
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.2"}
+# pg_map_id: 88d779e
+# pg_map_hash: SHA-256 88d779eaa20e3b015d2728f7431ae45c453cf6a21061b2fa5a774b0bb03742eb
+com.ssp.sdk.SspSdk -> com.ssp.sdk.SspSdk:
+# {"id":"sourceFile","fileName":"SspSdk.java"}
+    android.content.Context context -> a
+    java.lang.String appId -> b
+    boolean isInitialized -> c
+    com.ssp.sdk.SspSdk instance -> d
+    1:1:void <init>():28:28 -> <init>
+    2:2:void <init>():26:26 -> <init>
+    1:2:java.lang.String getAppId():139:140 -> getAppId
+    1:1:android.content.Context getContext():135:135 -> getContext
+    1:8:com.ssp.sdk.SspSdk getInstance():31:38 -> getInstance
+    1:1:void init(android.content.Context):46:46 -> init
+    2:15:void init(android.content.Context,java.lang.String):56:69 -> init
+    16:17:java.lang.String getAppIdFromManifest(android.content.Context):111:112 -> init
+    16:17:void init(android.content.Context,java.lang.String):69 -> init
+    18:36:java.lang.String getAppIdFromManifest(android.content.Context):111:129 -> init
+    18:36:void init(android.content.Context,java.lang.String):69 -> init
+    37:37:java.lang.String getAppIdFromManifest(android.content.Context):127:127 -> init
+    37:37:void init(android.content.Context,java.lang.String):69 -> init
+    38:54:void init(android.content.Context,java.lang.String):69:85 -> init
+    55:62:void reportInitialization():93:100 -> init
+    55:62:void init(android.content.Context,java.lang.String):88 -> init
+    63:76:void reportInitialization():93:106 -> init
+    63:76:void init(android.content.Context,java.lang.String):88 -> init
+    1:1:boolean isInitialized():144:144 -> isInitialized
+com.ssp.sdk.ad.BaseAd -> com.ssp.sdk.ad.BaseAd:
+# {"id":"sourceFile","fileName":"BaseAd.java"}
+    android.content.Context context -> a
+    java.lang.String adSlotId -> b
+    com.ssp.sdk.ad.SspLoadListener loadListener -> c
+    com.ssp.sdk.ad.SspInteractionListener interactionListener -> d
+    com.ssp.sdk.data.AdResponse adResponse -> e
+    boolean isLoaded -> f
+    long loadTime -> g
+    java.util.logging.Logger log -> h
+    1:1:void <clinit>():36:36 -> <clinit>
+    1:1:void <init>(android.content.Context,java.lang.String):37:37 -> <init>
+    2:14:void <init>(android.content.Context,java.lang.String):27:39 -> <init>
+    1:3:void fireImpression():132:134 -> a
+    4:14:void reportShow():224:234 -> a
+    4:14:void fireImpression():137 -> a
+    15:17:java.lang.String getTitle():256:258 -> a
+    15:17:void reportShow():235 -> a
+    15:17:void fireImpression():137 -> a
+    18:18:void reportShow():235:235 -> a
+    18:18:void fireImpression():137 -> a
+    19:19:void reportShow():227:227 -> a
+    19:19:void fireImpression():137 -> a
+    20:22:void fireImpression():138:140 -> a
+    23:33:void reportRequest(int):208:218 -> a
+    34:36:java.lang.String getTitle():256:258 -> a
+    34:36:void reportRequest(int):219 -> a
+    37:37:void reportRequest(int):219:219 -> a
+    38:38:void reportRequest(int):211:211 -> a
+    39:49:void reportClick():240:250 -> a
+    39:49:void fireClick(java.lang.String):149 -> a
+    50:52:java.lang.String getTitle():256:258 -> a
+    50:52:void reportClick():251 -> a
+    50:52:void fireClick(java.lang.String):149 -> a
+    53:53:void reportClick():251:251 -> a
+    53:53:void fireClick(java.lang.String):149 -> a
+    54:54:void reportClick():243:243 -> a
+    54:54:void fireClick(java.lang.String):149 -> a
+    55:73:void fireClick(java.lang.String):150:168 -> a
+    74:78:void com.ssp.sdk.network.NetworkClient.resolveClickUrl(java.lang.String,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):35:39 -> a
+    74:78:void fireClick(java.lang.String):168 -> a
+    79:81:void fireClick(java.lang.String):201:203 -> a
+    int getAdHeight() -> b
+    int getAdWidth() -> c
+    void onAdLoaded() -> d
+    1:1:boolean isValid():59:59 -> isValid
+    1:12:void loadAd():63:74 -> loadAd
+    13:13:void com.ssp.sdk.network.NetworkClient.resolveUrlWithPost(java.lang.String,java.lang.String,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):204:204 -> loadAd
+    13:13:void loadAd():74 -> loadAd
+    1:1:void setInteractionListener(com.ssp.sdk.ad.SspInteractionListener):47:47 -> setInteractionListener
+    1:1:void setLoadListener(com.ssp.sdk.ad.SspLoadListener):43:43 -> setLoadListener
+com.ssp.sdk.ad.BaseAd$1 -> a.a:
+# {"id":"sourceFile","fileName":"BaseAd.java"}
+    com.ssp.sdk.ad.BaseAd this$0 -> a
+    1:1:void <init>(com.ssp.sdk.ad.BaseAd):74:74 -> <init>
+    1:1:java.util.logging.Logger com.ssp.sdk.ad.BaseAd.access$000():21:21 -> a
+    1:1:void onResolved(int,java.lang.String,int,java.lang.String):78 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(IILjava/lang/String;Ljava/lang/String;)V"}
+    2:8:void onResolved(int,java.lang.String,int,java.lang.String):78:84 -> a
+    9:9:void com.ssp.sdk.ad.BaseAd.access$100(com.ssp.sdk.ad.BaseAd,java.lang.String):21:21 -> a
+    9:9:void onResolved(int,java.lang.String,int,java.lang.String):84 -> a
+    10:18:void com.ssp.sdk.ad.BaseAd.handleResponse(java.lang.String):114:122 -> a
+    10:18:void com.ssp.sdk.ad.BaseAd.access$100(com.ssp.sdk.ad.BaseAd,java.lang.String):21 -> a
+    10:18:void onResolved(int,java.lang.String,int,java.lang.String):84 -> a
+    19:19:void onResolved(int,java.lang.String,int,java.lang.String):85:85 -> a
+    20:20:void com.ssp.sdk.ad.BaseAd.access$200(com.ssp.sdk.ad.BaseAd,int):21:21 -> a
+    20:20:void onResolved(int,java.lang.String,int,java.lang.String):85 -> a
+    21:25:void onResolved(int,java.lang.String,int,java.lang.String):88:92 -> a
+    26:26:void com.ssp.sdk.ad.BaseAd.access$200(com.ssp.sdk.ad.BaseAd,int):21:21 -> a
+    26:26:void onResolved(int,java.lang.String,int,java.lang.String):92 -> a
+    27:30:void onResolved(int,java.lang.String,int,java.lang.String):96:99 -> a
+    31:31:void com.ssp.sdk.ad.BaseAd.access$200(com.ssp.sdk.ad.BaseAd,int):21:21 -> a
+    31:31:void onResolved(int,java.lang.String,int,java.lang.String):99 -> a
+    32:34:void onFailure(java.lang.String):106:108 -> a
+    35:35:void com.ssp.sdk.ad.BaseAd.access$200(com.ssp.sdk.ad.BaseAd,int):21:21 -> a
+    35:35:void onFailure(java.lang.String):108 -> a
+com.ssp.sdk.ad.BaseAd$2 -> a.b:
+# {"id":"sourceFile","fileName":"BaseAd.java"}
+    java.lang.String val$urlToResolve -> a
+    com.ssp.sdk.ad.BaseAd this$0 -> b
+    1:1:void <init>(com.ssp.sdk.ad.BaseAd,java.lang.String):168:168 -> <init>
+    1:10:void onResolved(int,java.lang.String,int,java.lang.String):172:181 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(IILjava/lang/String;Ljava/lang/String;)V"}
+    11:18:void onFailure(java.lang.String):188:195 -> a
+com.ssp.sdk.ad.SspBannerAd -> com.ssp.sdk.ad.SspBannerAd:
+# {"id":"sourceFile","fileName":"SspBannerAd.java"}
+    com.ssp.sdk.ad.SspBannerAd$BannerAdLogic adLogic -> a
+    int width -> b
+    int height -> c
+    android.webkit.WebView webView -> d
+    com.ssp.sdk.ad.SspLoadListener loadListener -> e
+    com.ssp.sdk.ad.SspInteractionListener interactionListener -> f
+    boolean autoRefresh -> g
+    int refreshInterval -> h
+    android.os.Handler refreshHandler -> i
+    java.lang.String adSlotId -> j
+    int retryCount -> k
+    java.lang.Runnable refreshRunnable -> l
+    boolean isAutoMode -> m
+    1:1:void <init>(android.content.Context,java.lang.String,int,int):56:56 -> <init>
+    2:295:void <init>(android.content.Context,java.lang.String,int,int):39:332 -> <init>
+    296:299:void <init>(android.content.Context,java.lang.String,int,int):57:60 -> <init>
+    300:300:void <init>(android.content.Context,java.lang.String):66:66 -> <init>
+    301:594:void <init>(android.content.Context,java.lang.String):39:332 -> <init>
+    595:617:void <init>(android.content.Context,java.lang.String):68:90 -> <init>
+    618:618:void <init>(android.content.Context):94:94 -> <init>
+    619:912:void <init>(android.content.Context):39:332 -> <init>
+    913:913:void <init>(android.content.Context,android.util.AttributeSet):98:98 -> <init>
+    914:1207:void <init>(android.content.Context,android.util.AttributeSet):39:332 -> <init>
+    1208:1208:void <init>(android.content.Context,android.util.AttributeSet,int):102:102 -> <init>
+    1209:1502:void <init>(android.content.Context,android.util.AttributeSet,int):39:332 -> <init>
+    1:77:void init(android.content.Context,java.lang.String):106:182 -> a
+    78:84:androidx.lifecycle.LifecycleOwner getLifecycleOwner(android.content.Context):187:193 -> a
+    85:88:void startRefresh():211:214 -> a
+    1:2:void stopRefresh():219:220 -> b
+    1:8:void destroy():376:383 -> destroy
+    1:1:boolean isValid():245:245 -> isValid
+    1:2:void loadAd():249:250 -> loadAd
+    1:37:void loadAndShow():335:371 -> loadAndShow
+    1:8:void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event):388:395 -> onStateChanged
+    1:2:void pause():225:226 -> pause
+    1:3:void resume():230:232 -> resume
+    1:7:void setAutoRefresh(boolean):200:206 -> setAutoRefresh
+    1:1:void setInteractionListener(com.ssp.sdk.ad.SspInteractionListener):241:241 -> setInteractionListener
+    1:1:void setLoadListener(com.ssp.sdk.ad.SspLoadListener):237:237 -> setLoadListener
+    1:66:void showAd():255:320 -> showAd
+    67:67:com.ssp.sdk.data.AdResponse com.ssp.sdk.ad.SspBannerAd$BannerAdLogic.getAdResponse():426:426 -> showAd
+    67:67:void showAd():320 -> showAd
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    68:75:void showAd():320:327 -> showAd
+    76:79:void showAd():256:259 -> showAd
+com.ssp.sdk.ad.SspBannerAd$1 -> a.c:
+# {"id":"sourceFile","fileName":"SspBannerAd.java"}
+    com.ssp.sdk.ad.SspBannerAd this$0 -> a
+    1:1:void <init>(com.ssp.sdk.ad.SspBannerAd):46:46 -> <init>
+    1:1:void run():49:49 -> run
+    2:2:boolean com.ssp.sdk.ad.SspBannerAd.access$000(com.ssp.sdk.ad.SspBannerAd):31:31 -> run
+    2:2:void run():49 -> run
+    3:3:com.ssp.sdk.ad.SspBannerAd$BannerAdLogic com.ssp.sdk.ad.SspBannerAd.access$100(com.ssp.sdk.ad.SspBannerAd):31:31 -> run
+    3:3:void run():49 -> run
+    4:4:void run():50:50 -> run
+com.ssp.sdk.ad.SspBannerAd$2 -> a.d:
+# {"id":"sourceFile","fileName":"SspBannerAd.java"}
+    com.ssp.sdk.ad.SspBannerAd this$0 -> a
+    1:1:void <init>(com.ssp.sdk.ad.SspBannerAd):109:109 -> <init>
+    1:1:void onAdFailed(java.lang.String):142:142 -> onAdFailed
+    2:2:com.ssp.sdk.ad.SspLoadListener com.ssp.sdk.ad.SspBannerAd.access$400(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    2:2:void onAdFailed(java.lang.String):142 -> onAdFailed
+    3:10:void onAdFailed(java.lang.String):142:149 -> onAdFailed
+    11:11:boolean com.ssp.sdk.ad.SspBannerAd.access$000(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    11:11:void onAdFailed(java.lang.String):149 -> onAdFailed
+    12:12:android.webkit.WebView com.ssp.sdk.ad.SspBannerAd.access$600(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    12:12:void onAdFailed(java.lang.String):149 -> onAdFailed
+    13:13:int com.ssp.sdk.ad.SspBannerAd.access$700(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    13:13:void onAdFailed(java.lang.String):150 -> onAdFailed
+    14:14:int com.ssp.sdk.ad.SspBannerAd.access$708(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    14:14:void onAdFailed(java.lang.String):151 -> onAdFailed
+    15:15:void com.ssp.sdk.ad.SspBannerAd.access$800(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    15:15:void onAdFailed(java.lang.String):152 -> onAdFailed
+    16:17:void onAdFailed(java.lang.String):154:155 -> onAdFailed
+    18:18:void com.ssp.sdk.ad.SspBannerAd.access$900(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    18:18:void onAdFailed(java.lang.String):155 -> onAdFailed
+    1:1:void onAdLoaded(com.ssp.sdk.ad.BaseAd):113:113 -> onAdLoaded
+    2:5:com.ssp.sdk.util.SspConfigManager com.ssp.sdk.util.SspConfigManager.getInstance():15:18 -> onAdLoaded
+    2:5:void onAdLoaded(com.ssp.sdk.ad.BaseAd):113 -> onAdLoaded
+    6:6:void onAdLoaded(com.ssp.sdk.ad.BaseAd):113:113 -> onAdLoaded
+    7:7:java.lang.String com.ssp.sdk.ad.SspBannerAd.access$200(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdLoaded
+    7:7:void onAdLoaded(com.ssp.sdk.ad.BaseAd):113 -> onAdLoaded
+    8:10:void onAdLoaded(com.ssp.sdk.ad.BaseAd):113:115 -> onAdLoaded
+    11:11:int com.ssp.sdk.ad.SspBannerAd.access$302(com.ssp.sdk.ad.SspBannerAd,int):31:31 -> onAdLoaded
+    11:11:void onAdLoaded(com.ssp.sdk.ad.BaseAd):115 -> onAdLoaded
+    12:12:void onAdLoaded(com.ssp.sdk.ad.BaseAd):117:117 -> onAdLoaded
+    13:13:int com.ssp.sdk.ad.SspBannerAd.access$302(com.ssp.sdk.ad.SspBannerAd,int):31:31 -> onAdLoaded
+    13:13:void onAdLoaded(com.ssp.sdk.ad.BaseAd):117 -> onAdLoaded
+    14:14:void onAdLoaded(com.ssp.sdk.ad.BaseAd):122:122 -> onAdLoaded
+    15:15:com.ssp.sdk.ad.SspLoadListener com.ssp.sdk.ad.SspBannerAd.access$400(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdLoaded
+    15:15:void onAdLoaded(com.ssp.sdk.ad.BaseAd):122 -> onAdLoaded
+    16:16:com.ssp.sdk.ad.SspBannerAd$BannerAdLogic com.ssp.sdk.ad.SspBannerAd.access$100(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdLoaded
+    16:16:void onAdLoaded(com.ssp.sdk.ad.BaseAd):123 -> onAdLoaded
+    17:27:void onAdLoaded(com.ssp.sdk.ad.BaseAd):123:133 -> onAdLoaded
+    28:28:boolean com.ssp.sdk.ad.SspBannerAd.access$500(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdLoaded
+    28:28:void onAdLoaded(com.ssp.sdk.ad.BaseAd):133 -> onAdLoaded
+    29:29:boolean com.ssp.sdk.ad.SspBannerAd.access$000(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdLoaded
+    29:29:void onAdLoaded(com.ssp.sdk.ad.BaseAd):133 -> onAdLoaded
+    30:30:android.webkit.WebView com.ssp.sdk.ad.SspBannerAd.access$600(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdLoaded
+    30:30:void onAdLoaded(com.ssp.sdk.ad.BaseAd):133 -> onAdLoaded
+    31:34:void onAdLoaded(com.ssp.sdk.ad.BaseAd):134:137 -> onAdLoaded
+    35:35:int com.ssp.sdk.ad.SspBannerAd.access$702(com.ssp.sdk.ad.SspBannerAd,int):31:31 -> onAdLoaded
+    35:35:void onAdLoaded(com.ssp.sdk.ad.BaseAd):137 -> onAdLoaded
+com.ssp.sdk.ad.SspBannerAd$3 -> a.e:
+# {"id":"sourceFile","fileName":"SspBannerAd.java"}
+    com.ssp.sdk.ad.SspBannerAd this$0 -> a
+    1:1:void <init>(com.ssp.sdk.ad.SspBannerAd):161:161 -> <init>
+    1:1:void onAdClicked(java.lang.String):169:169 -> onAdClicked
+    2:2:com.ssp.sdk.ad.SspInteractionListener com.ssp.sdk.ad.SspBannerAd.access$1000(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdClicked
+    2:2:void onAdClicked(java.lang.String):169 -> onAdClicked
+    3:3:void onAdClicked(java.lang.String):169:169 -> onAdClicked
+    1:1:void onAdShowFailed(java.lang.String):174:174 -> onAdShowFailed
+    2:2:com.ssp.sdk.ad.SspInteractionListener com.ssp.sdk.ad.SspBannerAd.access$1000(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdShowFailed
+    2:2:void onAdShowFailed(java.lang.String):174 -> onAdShowFailed
+    3:3:void onAdShowFailed(java.lang.String):174:174 -> onAdShowFailed
+    1:1:void onImpression(java.lang.String):164:164 -> onImpression
+    2:2:com.ssp.sdk.ad.SspInteractionListener com.ssp.sdk.ad.SspBannerAd.access$1000(com.ssp.sdk.ad.SspBannerAd):31:31 -> onImpression
+    2:2:void onImpression(java.lang.String):164 -> onImpression
+    3:3:void onImpression(java.lang.String):164:164 -> onImpression
+com.ssp.sdk.ad.SspBannerAd$4 -> a.g:
+# {"id":"sourceFile","fileName":"SspBannerAd.java"}
+    com.ssp.sdk.ad.SspBannerAd this$0 -> a
+    1:1:void <init>(com.ssp.sdk.ad.SspBannerAd):276:276 -> <init>
+    1:11:boolean onCreateWindow(android.webkit.WebView,boolean,boolean,android.os.Message):279:289 -> onCreateWindow
+com.ssp.sdk.ad.SspBannerAd$4$1 -> a.f:
+# {"id":"sourceFile","fileName":"SspBannerAd.java"}
+    com.ssp.sdk.ad.SspBannerAd$4 this$1 -> a
+    1:1:void <init>(com.ssp.sdk.ad.SspBannerAd$4):281:281 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/g;)V"}
+    1:1:boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String):284:284 -> shouldOverrideUrlLoading
+    2:2:com.ssp.sdk.ad.SspBannerAd$BannerAdLogic com.ssp.sdk.ad.SspBannerAd.access$100(com.ssp.sdk.ad.SspBannerAd):31:31 -> shouldOverrideUrlLoading
+    2:2:boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String):284 -> shouldOverrideUrlLoading
+    3:3:boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String):284:284 -> shouldOverrideUrlLoading
+com.ssp.sdk.ad.SspBannerAd$5 -> a.h:
+# {"id":"sourceFile","fileName":"SspBannerAd.java"}
+    com.ssp.sdk.ad.SspBannerAd this$0 -> a
+    1:1:void <init>(com.ssp.sdk.ad.SspBannerAd):294:294 -> <init>
+    1:3:void onPageFinished(android.webkit.WebView,java.lang.String):297:299 -> onPageFinished
+    4:4:com.ssp.sdk.ad.SspBannerAd$BannerAdLogic com.ssp.sdk.ad.SspBannerAd.access$100(com.ssp.sdk.ad.SspBannerAd):31:31 -> onPageFinished
+    4:4:void onPageFinished(android.webkit.WebView,java.lang.String):299 -> onPageFinished
+    5:5:void onPageFinished(android.webkit.WebView,java.lang.String):299:299 -> onPageFinished
+    1:1:boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String):305:305 -> shouldOverrideUrlLoading
+    2:2:com.ssp.sdk.ad.SspBannerAd$BannerAdLogic com.ssp.sdk.ad.SspBannerAd.access$100(com.ssp.sdk.ad.SspBannerAd):31:31 -> shouldOverrideUrlLoading
+    2:2:boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String):305 -> shouldOverrideUrlLoading
+    3:3:boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String):305:305 -> shouldOverrideUrlLoading
+com.ssp.sdk.ad.SspBannerAd$6 -> a.i:
+# {"id":"sourceFile","fileName":"SspBannerAd.java"}
+    com.ssp.sdk.ad.SspLoadListener val$userLoadListener -> a
+    com.ssp.sdk.ad.SspBannerAd this$0 -> b
+    1:1:void <init>(com.ssp.sdk.ad.SspBannerAd,com.ssp.sdk.ad.SspLoadListener):341:341 -> <init>
+    1:4:void onAdFailed(java.lang.String):356:359 -> onAdFailed
+    5:5:boolean com.ssp.sdk.ad.SspBannerAd.access$000(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    5:5:void onAdFailed(java.lang.String):359 -> onAdFailed
+    6:6:int com.ssp.sdk.ad.SspBannerAd.access$700(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    6:6:void onAdFailed(java.lang.String):360 -> onAdFailed
+    7:7:int com.ssp.sdk.ad.SspBannerAd.access$708(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    7:7:void onAdFailed(java.lang.String):361 -> onAdFailed
+    8:8:void com.ssp.sdk.ad.SspBannerAd.access$800(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    8:8:void onAdFailed(java.lang.String):362 -> onAdFailed
+    9:10:void onAdFailed(java.lang.String):364:365 -> onAdFailed
+    11:11:void com.ssp.sdk.ad.SspBannerAd.access$900(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdFailed
+    11:11:void onAdFailed(java.lang.String):365 -> onAdFailed
+    1:1:void onAdLoaded(com.ssp.sdk.ad.BaseAd):345:345 -> onAdLoaded
+    2:5:com.ssp.sdk.util.SspConfigManager com.ssp.sdk.util.SspConfigManager.getInstance():15:18 -> onAdLoaded
+    2:5:void onAdLoaded(com.ssp.sdk.ad.BaseAd):345 -> onAdLoaded
+    6:6:void onAdLoaded(com.ssp.sdk.ad.BaseAd):345:345 -> onAdLoaded
+    7:7:java.lang.String com.ssp.sdk.ad.SspBannerAd.access$200(com.ssp.sdk.ad.SspBannerAd):31:31 -> onAdLoaded
+    7:7:void onAdLoaded(com.ssp.sdk.ad.BaseAd):345 -> onAdLoaded
+    8:9:void onAdLoaded(com.ssp.sdk.ad.BaseAd):345:346 -> onAdLoaded
+    10:10:int com.ssp.sdk.ad.SspBannerAd.access$302(com.ssp.sdk.ad.SspBannerAd,int):31:31 -> onAdLoaded
+    10:10:void onAdLoaded(com.ssp.sdk.ad.BaseAd):346 -> onAdLoaded
+    11:11:void onAdLoaded(com.ssp.sdk.ad.BaseAd):348:348 -> onAdLoaded
+    12:12:int com.ssp.sdk.ad.SspBannerAd.access$702(com.ssp.sdk.ad.SspBannerAd,int):31:31 -> onAdLoaded
+    12:12:void onAdLoaded(com.ssp.sdk.ad.BaseAd):348 -> onAdLoaded
+    13:14:void onAdLoaded(com.ssp.sdk.ad.BaseAd):350:351 -> onAdLoaded
+com.ssp.sdk.ad.SspBannerAd$BannerAdLogic -> a.j:
+# {"id":"sourceFile","fileName":"SspBannerAd.java"}
+    com.ssp.sdk.ad.SspBannerAd this$0 -> i
+    1:2:void <init>(com.ssp.sdk.ad.SspBannerAd,android.content.Context,java.lang.String):401:402 -> <init>
+    1:1:void fireImpression():431:431 -> a
+    2:2:void fireClick(java.lang.String):440:440 -> a
+    1:1:int getAdHeight():417:417 -> b
+    2:2:int com.ssp.sdk.ad.SspBannerAd.access$1200(com.ssp.sdk.ad.SspBannerAd):31:31 -> b
+    2:2:int getAdHeight():417 -> b
+    1:1:int getAdWidth():412:412 -> c
+    2:2:int com.ssp.sdk.ad.SspBannerAd.access$1100(com.ssp.sdk.ad.SspBannerAd):31:31 -> c
+    2:2:int getAdWidth():412 -> c
+    1:1:com.ssp.sdk.data.AdType getAdType():407:407 -> getAdType
+com.ssp.sdk.ad.SspFullScreenVideoActivity -> com.ssp.sdk.ad.SspFullScreenVideoActivity:
+# {"id":"sourceFile","fileName":"SspFullScreenVideoActivity.java"}
+    1:1:void <init>():10:10 -> <init>
+    1:23:void onCreate(android.os.Bundle):18:40 -> onCreate
+    24:24:void com.ssp.sdk.ad.SspVideoView.start():308:308 -> onCreate
+    24:24:void onCreate(android.os.Bundle):40 -> onCreate
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    25:25:void com.ssp.sdk.ad.SspVideoView.start():308:308 -> onCreate
+    25:25:void onCreate(android.os.Bundle):40 -> onCreate
+    26:26:void onCreate(android.os.Bundle):28:28 -> onCreate
+    1:2:void onDestroy():57:58 -> onDestroy
+    3:4:void com.ssp.sdk.ad.SspVideoView.destroy():316:317 -> onDestroy
+    3:4:void onDestroy():58 -> onDestroy
+    5:7:void com.ssp.sdk.ad.SspVideoView.stopTracking():350:352 -> onDestroy
+    5:7:void com.ssp.sdk.ad.SspVideoView.destroy():319 -> onDestroy
+    5:7:void onDestroy():58 -> onDestroy
+    1:2:void onPause():45:46 -> onPause
+    3:3:void com.ssp.sdk.ad.SspVideoView.pause():312:312 -> onPause
+    3:3:void onPause():46 -> onPause
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    4:4:void com.ssp.sdk.ad.SspVideoView.pause():312:312 -> onPause
+    4:4:void onPause():46 -> onPause
+    1:2:void onResume():51:52 -> onResume
+    3:3:void com.ssp.sdk.ad.SspVideoView.start():308:308 -> onResume
+    3:3:void onResume():52 -> onResume
+com.ssp.sdk.ad.SspInteractionListener -> com.ssp.sdk.ad.SspInteractionListener:
+# {"id":"sourceFile","fileName":"SspInteractionListener.java"}
+com.ssp.sdk.ad.SspLoadListener -> com.ssp.sdk.ad.SspLoadListener:
+# {"id":"sourceFile","fileName":"SspLoadListener.java"}
+com.ssp.sdk.ad.SspNativeAd -> com.ssp.sdk.ad.SspNativeAd:
+# {"id":"sourceFile","fileName":"SspNativeAd.java"}
+    1:1:void <init>(android.content.Context,java.lang.String):11:11 -> <init>
+    1:1:void com.ssp.sdk.ad.BaseAd.fireClick():145:145 -> a
+    1:1:void lambda$registerViewForInteraction$0(android.view.View):63 -> a
+    int getAdHeight() -> b
+    int getAdWidth() -> c
+    1:1:com.ssp.sdk.data.AdType getAdType():16:16 -> getAdType
+    1:1:java.lang.String getBody():34:34 -> getBody
+    1:1:java.lang.String getCallToAction():46:46 -> getCallToAction
+    1:1:java.lang.String getDescription():38:38 -> getDescription
+    1:1:java.lang.String getIconUrl():54:54 -> getIconUrl
+    1:1:java.lang.String getImageUrl():50:50 -> getImageUrl
+    1:1:java.lang.Double getRating():42:42 -> getRating
+    1:1:java.lang.String getTitle():30:30 -> getTitle
+    1:5:void registerViewForInteraction(android.view.View):58:62 -> registerViewForInteraction
+com.ssp.sdk.ad.SspVideoAd -> com.ssp.sdk.ad.SspVideoAd:
+# {"id":"sourceFile","fileName":"SspVideoAd.java"}
+    java.util.Set firedEvents -> i
+    boolean autoCache -> j
+    java.util.Map activeAds -> k
+    1:1:void <clinit>():26:26 -> <clinit>
+    1:1:void <init>(android.content.Context,java.lang.String):39:39 -> <init>
+    2:6:void <init>(android.content.Context,java.lang.String):32:36 -> <init>
+    1:1:int getAdHeight():0:0 -> b
+    2:11:void fireEvent(java.lang.String):161:170 -> b
+    int getAdWidth() -> c
+    1:1:void registerActiveAd():48:48 -> d
+    1:1:void onAdLoaded():66 -> d
+    2:6:void onAdLoaded():67:71 -> d
+    7:10:com.ssp.sdk.util.VideoCacheManager com.ssp.sdk.util.VideoCacheManager.getInstance():22:25 -> d
+    7:10:void onAdLoaded():71 -> d
+    11:11:void onAdLoaded():71:71 -> d
+    1:1:void enableAutoCache(boolean):52:52 -> enableAutoCache
+    1:1:com.ssp.sdk.ad.SspVideoAd getActiveAd(java.lang.String):29:29 -> getActiveAd
+    1:1:com.ssp.sdk.data.AdType getAdType():78:78 -> getAdType
+    1:3:com.ssp.sdk.ad.SspVideoView getAdView():96:98 -> getAdView
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()La/n;"}
+    1:1:boolean isAutoCacheEnabled():56:56 -> isAutoCacheEnabled
+    1:1:boolean isLoaded():60:60 -> isLoaded
+    1:9:void show(android.view.ViewGroup):121:129 -> show
+    10:10:void com.ssp.sdk.ad.SspVideoView.start():308:308 -> show
+    10:10:void show(android.view.ViewGroup):130 -> show
+    11:11:void show(android.view.ViewGroup):132:132 -> show
+    1:8:void showAd(android.app.Activity):107:114 -> showAd
+com.ssp.sdk.ad.SspVideoView -> a.n:
+# {"id":"sourceFile","fileName":"SspVideoView.java"}
+    android.widget.VideoView videoView -> a
+    android.widget.FrameLayout endCardContainer -> b
+    com.ssp.sdk.ad.SspVideoAd adController -> c
+    com.ssp.sdk.data.VideoResponse adResponse -> d
+    boolean autoCache -> e
+    android.os.Handler progressHandler -> f
+    java.lang.Runnable progressRunnable -> g
+    android.media.MediaPlayer mediaPlayer -> h
+    boolean isMuted -> i
+    android.widget.Button muteButton -> j
+    1:1:void <init>(android.content.Context):46:46 -> <init>
+    2:13:void <init>(android.content.Context):36:47 -> <init>
+    1:26:void init():57:82 -> a
+    27:27:void lambda$setupVideo$1(android.media.MediaPlayer):127:127 -> a
+    28:31:void com.ssp.sdk.ad.SspVideoView.updateVolume():175:178 -> a
+    28:31:void lambda$setupVideo$1(android.media.MediaPlayer):129 -> a
+    32:36:void lambda$setupVideo$1(android.media.MediaPlayer):131:135 -> a
+    37:54:void com.ssp.sdk.ad.SspVideoView.startTracking():329:346 -> a
+    37:54:void lambda$setupVideo$1(android.media.MediaPlayer):137 -> a
+    55:56:boolean lambda$setupVideo$3(android.media.MediaPlayer,int,int):149:150 -> a
+    57:58:boolean lambda$setupVideo$4(android.view.View,android.view.MotionEvent):156:157 -> a
+    59:59:void com.ssp.sdk.ad.BaseAd.fireClick():145:145 -> a
+    59:59:boolean lambda$setupVideo$4(android.view.View,android.view.MotionEvent):158 -> a
+      # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
+    60:60:void com.ssp.sdk.ad.SspVideoView.toggleSound():166:166 -> a
+    60:60:void lambda$init$0(android.view.View):76 -> a
+    61:65:void com.ssp.sdk.ad.SspVideoView.updateVolume():174:178 -> a
+    61:65:void com.ssp.sdk.ad.SspVideoView.toggleSound():167 -> a
+    61:65:void lambda$init$0(android.view.View):76 -> a
+    66:67:void com.ssp.sdk.ad.SspVideoView.toggleSound():168:169 -> a
+    66:67:void lambda$init$0(android.view.View):76 -> a
+    68:68:void com.ssp.sdk.ad.SspVideoView.handleEndCardClick(com.ssp.sdk.data.VideoResponse$EndCard):254:254 -> a
+    68:68:void lambda$showEndCard$5(com.ssp.sdk.data.VideoResponse$EndCard,android.view.View):198 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lb/g;Landroid/view/View;)V"}
+    69:75:void handleEndCardClick(com.ssp.sdk.data.VideoResponse$EndCard,java.lang.String):259:265 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lb/g;Ljava/lang/String;)V"}
+    1:10:void setupVideo():96:105 -> b
+    11:14:com.ssp.sdk.util.VideoCacheManager com.ssp.sdk.util.VideoCacheManager.getInstance():22:25 -> b
+    11:14:void setupVideo():105 -> b
+    15:15:void setupVideo():105:105 -> b
+    16:17:java.io.File com.ssp.sdk.util.VideoCacheManager.getCacheFile(android.content.Context,java.lang.String):94:95 -> b
+    16:17:boolean com.ssp.sdk.util.VideoCacheManager.isCached(android.content.Context,java.lang.String):77 -> b
+    16:17:void setupVideo():105 -> b
+    18:18:boolean com.ssp.sdk.util.VideoCacheManager.isCached(android.content.Context,java.lang.String):78:78 -> b
+    18:18:void setupVideo():105 -> b
+    19:20:void setupVideo():106:106 -> b
+    21:22:java.io.File com.ssp.sdk.util.VideoCacheManager.getCacheFile(android.content.Context,java.lang.String):94:95 -> b
+    21:22:boolean com.ssp.sdk.util.VideoCacheManager.isCached(android.content.Context,java.lang.String):77 -> b
+    21:22:java.lang.String com.ssp.sdk.util.VideoCacheManager.getCachedVideoPath(android.content.Context,java.lang.String):86 -> b
+    21:22:void setupVideo():106 -> b
+    23:23:boolean com.ssp.sdk.util.VideoCacheManager.isCached(android.content.Context,java.lang.String):78:78 -> b
+    23:23:java.lang.String com.ssp.sdk.util.VideoCacheManager.getCachedVideoPath(android.content.Context,java.lang.String):86 -> b
+    23:23:void setupVideo():106 -> b
+    24:25:java.io.File com.ssp.sdk.util.VideoCacheManager.getCacheFile(android.content.Context,java.lang.String):94:95 -> b
+    24:25:java.lang.String com.ssp.sdk.util.VideoCacheManager.getCachedVideoPath(android.content.Context,java.lang.String):87 -> b
+    24:25:void setupVideo():106 -> b
+    26:26:java.lang.String com.ssp.sdk.util.VideoCacheManager.getCachedVideoPath(android.content.Context,java.lang.String):87:87 -> b
+    26:26:void setupVideo():106 -> b
+    27:73:void setupVideo():109:155 -> b
+    74:75:void com.ssp.sdk.ad.SspVideoView.destroy():316:317 -> b
+    74:75:void lambda$showEndCard$6(android.view.View):226 -> b
+    76:78:void com.ssp.sdk.ad.SspVideoView.stopTracking():350:352 -> b
+    76:78:void com.ssp.sdk.ad.SspVideoView.destroy():319 -> b
+    76:78:void lambda$showEndCard$6(android.view.View):226 -> b
+    79:92:void lambda$showEndCard$6(android.view.View):229:242 -> b
+    93:95:void com.ssp.sdk.ad.SspVideoView.stopTracking():350:352 -> b
+    93:95:void lambda$setupVideo$2(android.media.MediaPlayer):141 -> b
+    96:99:void lambda$setupVideo$2(android.media.MediaPlayer):142:145 -> b
+    1:67:void showEndCard():183:249 -> c
+    1:1:void onDetachedFromWindow():324:324 -> onDetachedFromWindow
+    2:4:void com.ssp.sdk.ad.SspVideoView.stopTracking():350:352 -> onDetachedFromWindow
+    2:4:void onDetachedFromWindow():325 -> onDetachedFromWindow
+    1:4:void setAdController(com.ssp.sdk.ad.SspVideoAd):87:90 -> setAdController
+com.ssp.sdk.ad.SspVideoView$1 -> a.k:
+# {"id":"sourceFile","fileName":"SspVideoView.java"}
+    com.ssp.sdk.data.VideoResponse$EndCard val$endCard -> a
+    com.ssp.sdk.ad.SspVideoView this$0 -> b
+    1:1:void <init>(com.ssp.sdk.ad.SspVideoView,com.ssp.sdk.data.VideoResponse$EndCard):204:204 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/n;Lb/g;)V"}
+    1:1:boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String):207:207 -> shouldOverrideUrlLoading
+    2:2:void com.ssp.sdk.ad.SspVideoView.access$000(com.ssp.sdk.ad.SspVideoView,com.ssp.sdk.data.VideoResponse$EndCard,java.lang.String):29:29 -> shouldOverrideUrlLoading
+    2:2:boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String):207 -> shouldOverrideUrlLoading
+com.ssp.sdk.ad.SspVideoView$2 -> a.l:
+# {"id":"sourceFile","fileName":"SspVideoView.java"}
+    com.ssp.sdk.ad.SspVideoView this$0 -> a
+    1:1:void <init>(com.ssp.sdk.ad.SspVideoView):330:330 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(La/n;)V"}
+    1:1:void run():333:333 -> run
+    2:2:android.widget.VideoView com.ssp.sdk.ad.SspVideoView.access$100(com.ssp.sdk.ad.SspVideoView):29:29 -> run
+    2:2:void run():333 -> run
+    3:4:void run():333:334 -> run
+    5:5:android.widget.VideoView com.ssp.sdk.ad.SspVideoView.access$100(com.ssp.sdk.ad.SspVideoView):29:29 -> run
+    5:5:void run():334 -> run
+    6:7:void run():334:335 -> run
+    8:8:android.widget.VideoView com.ssp.sdk.ad.SspVideoView.access$100(com.ssp.sdk.ad.SspVideoView):29:29 -> run
+    8:8:void run():335 -> run
+    9:10:void run():335:336 -> run
+    11:11:com.ssp.sdk.ad.SspVideoAd com.ssp.sdk.ad.SspVideoView.access$200(com.ssp.sdk.ad.SspVideoView):29:29 -> run
+    11:11:void run():336 -> run
+    12:13:void run():338:339 -> run
+    14:14:com.ssp.sdk.ad.SspVideoAd com.ssp.sdk.ad.SspVideoView.access$200(com.ssp.sdk.ad.SspVideoView):29:29 -> run
+    14:14:void run():339 -> run
+    15:16:void run():339:340 -> run
+    17:17:com.ssp.sdk.ad.SspVideoAd com.ssp.sdk.ad.SspVideoView.access$200(com.ssp.sdk.ad.SspVideoView):29:29 -> run
+    17:17:void run():340 -> run
+    18:20:void run():340:342 -> run
+    21:21:android.os.Handler com.ssp.sdk.ad.SspVideoView.access$300(com.ssp.sdk.ad.SspVideoView):29:29 -> run
+    21:21:void run():342 -> run
+    22:22:void run():342:342 -> run
+com.ssp.sdk.ad.SspVideoView$ImageLoadTask -> a.m:
+# {"id":"sourceFile","fileName":"SspVideoView.java"}
+    java.lang.String url -> a
+    android.widget.ImageView imageView -> b
+    1:3:void <init>(java.lang.String,android.widget.ImageView):274:276 -> <init>
+    1:1:java.lang.Object doInBackground(java.lang.Object[]):270:270 -> doInBackground
+    2:12:android.graphics.Bitmap com.ssp.sdk.ad.SspVideoView$ImageLoadTask.doInBackground(java.lang.Void[]):283:293 -> doInBackground
+    2:12:java.lang.Object doInBackground(java.lang.Object[]):270 -> doInBackground
+    13:18:android.graphics.Bitmap com.ssp.sdk.ad.SspVideoView$ImageLoadTask.doInBackground(java.lang.Void[]):290:295 -> doInBackground
+    13:18:java.lang.Object doInBackground(java.lang.Object[]):270 -> doInBackground
+    1:1:void onPostExecute(java.lang.Object):270:270 -> onPostExecute
+    2:3:void com.ssp.sdk.ad.SspVideoView$ImageLoadTask.onPostExecute(android.graphics.Bitmap):301:302 -> onPostExecute
+    2:3:void onPostExecute(java.lang.Object):270 -> onPostExecute
+com.ssp.sdk.data.AdRequest -> b.a:
+# {"id":"sourceFile","fileName":"AdRequest.java"}
+    1:5:void <init>(java.lang.String,java.lang.String,int,int):15:19 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(IILjava/lang/String;Ljava/lang/String;)V"}
+    1:6:org.json.JSONObject toJson():23:28 -> a
+    7:7:java.lang.String com.ssp.sdk.util.DeviceInfoManager.getIfa():117:117 -> a
+    7:7:org.json.JSONObject toJson():28 -> a
+    8:9:org.json.JSONObject toJson():28:29 -> a
+    10:10:java.lang.String com.ssp.sdk.util.DeviceInfoManager.getIp():121:121 -> a
+    10:10:org.json.JSONObject toJson():29 -> a
+    11:12:org.json.JSONObject toJson():29:30 -> a
+    13:15:java.lang.String com.ssp.sdk.util.DeviceInfoManager.getAppVersion():90:92 -> a
+    13:15:org.json.JSONObject toJson():30 -> a
+    16:17:org.json.JSONObject toJson():30:31 -> a
+    18:18:int com.ssp.sdk.util.DeviceInfoManager.getScreenHeight():85:85 -> a
+    18:18:org.json.JSONObject toJson():31 -> a
+    19:20:org.json.JSONObject toJson():31:32 -> a
+    21:21:java.lang.String com.ssp.sdk.util.DeviceInfoManager.getUserAgent():97:97 -> a
+    21:21:org.json.JSONObject toJson():32 -> a
+    22:24:org.json.JSONObject toJson():32:34 -> a
+    25:25:java.lang.String com.ssp.sdk.util.DeviceInfoManager.getOsv():101:101 -> a
+    25:25:org.json.JSONObject toJson():34 -> a
+    26:44:org.json.JSONObject toJson():34:52 -> a
+    45:45:int com.ssp.sdk.util.DeviceInfoManager.getScreenWidth():81:81 -> a
+    45:45:org.json.JSONObject toJson():52 -> a
+    46:47:org.json.JSONObject toJson():52:53 -> a
+    48:48:java.lang.String com.ssp.sdk.util.DeviceInfoManager.getDeviceModel():109:109 -> a
+    48:48:org.json.JSONObject toJson():53 -> a
+    49:50:org.json.JSONObject toJson():53:54 -> a
+    51:51:java.lang.String com.ssp.sdk.util.DeviceInfoManager.getDeviceBrand():105:105 -> a
+    51:51:org.json.JSONObject toJson():54 -> a
+    52:53:org.json.JSONObject toJson():54:55 -> a
+    54:54:int com.ssp.sdk.util.DeviceInfoManager.getConnectionType():113:113 -> a
+    54:54:org.json.JSONObject toJson():55 -> a
+    55:56:org.json.JSONObject toJson() -> a
+    57:57:java.lang.String com.ssp.sdk.util.DeviceInfoManager.getLanguage():125:125 -> a
+    57:57:org.json.JSONObject toJson():56 -> a
+    58:72:org.json.JSONObject toJson():56:70 -> a
+com.ssp.sdk.data.AdResponse -> b.b:
+# {"id":"sourceFile","fileName":"AdResponse.java"}
+    1:14:void <init>():8:21 -> <init>
+    1:1:java.lang.String cleanString(java.lang.String):73:73 -> a
+    2:33:void parseCommon(com.ssp.sdk.data.AdResponse,org.json.JSONObject):77:108 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lb/b;Lorg/json/JSONObject;)V"}
+    34:63:void parseNative(com.ssp.sdk.data.NativeResponse,org.json.JSONObject):116:145 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lb/e;Lorg/json/JSONObject;)V"}
+    64:134:void parseVideo(com.ssp.sdk.data.VideoResponse,org.json.JSONObject):152:222 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lb/i;Lorg/json/JSONObject;)V"}
+    1:11:com.ssp.sdk.data.AdResponse parse(java.lang.String):28:38 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;)Lb/b;"}
+    12:32:com.ssp.sdk.data.AdResponse parse(java.lang.String):36:56 -> b
+    33:33:void com.ssp.sdk.data.AdResponse.parseBanner(com.ssp.sdk.data.BannerResponse,org.json.JSONObject):112:112 -> b
+    33:33:com.ssp.sdk.data.AdResponse parse(java.lang.String):56 -> b
+    34:43:com.ssp.sdk.data.AdResponse parse(java.lang.String):57:66 -> b
+com.ssp.sdk.data.AdType -> com.ssp.sdk.data.AdType:
+# {"id":"sourceFile","fileName":"AdType.java"}
+    1:1:com.ssp.sdk.data.AdType[] $values():3:3 -> $values
+    1:3:void <clinit>():4:6 -> <clinit>
+    4:4:void <clinit>():3:3 -> <clinit>
+    1:1:void <init>(java.lang.String,int):3:3 -> <init>
+    1:1:com.ssp.sdk.data.AdType valueOf(java.lang.String):3:3 -> valueOf
+    1:1:com.ssp.sdk.data.AdType[] values():3:3 -> values
+com.ssp.sdk.data.BannerResponse -> b.c:
+# {"id":"sourceFile","fileName":"BannerResponse.java"}
+    1:1:void <init>():3:3 -> <init>
+com.ssp.sdk.data.NativeResponse -> b.e:
+# {"id":"sourceFile","fileName":"NativeResponse.java"}
+    1:14:void <init>():6:19 -> <init>
+com.ssp.sdk.data.NativeResponse$EventTracker -> b.d:
+# {"id":"sourceFile","fileName":"NativeResponse.java"}
+    void <init>() -> <init>
+com.ssp.sdk.data.ReportEvent -> b.f:
+# {"id":"sourceFile","fileName":"ReportEvent.java"}
+    1:9:void <init>(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,long,java.lang.String):13:21 -> <init>
+com.ssp.sdk.data.VideoResponse -> b.i:
+# {"id":"sourceFile","fileName":"VideoResponse.java"}
+    1:10:void <init>():8:17 -> <init>
+com.ssp.sdk.data.VideoResponse$EndCard -> b.g:
+# {"id":"sourceFile","fileName":"VideoResponse.java"}
+    void <init>() -> <init>
+com.ssp.sdk.data.VideoResponse$MediaFile -> b.h:
+# {"id":"sourceFile","fileName":"VideoResponse.java"}
+    void <init>() -> <init>
+com.ssp.sdk.network.NetworkClient -> c.b:
+# {"id":"sourceFile","fileName":"NetworkClient.java"}
+    android.os.Handler mainHandler -> a
+    java.util.concurrent.ExecutorService resolveExecutor -> b
+    1:2:void <clinit>():21:22 -> <clinit>
+    1:214:void resolveUrlWithPostInternal(java.lang.String,java.lang.String,int,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):0:213 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;La/a;)V"}
+    215:215:void resolveUrlWithGet(java.lang.String,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):43:43 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;La/b;)V"}
+    216:256:void lambda$resolveUrlWithGet$2(java.lang.String,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):50:90 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;Lc/a;)V"}
+    257:286:void lambda$resolveUrlWithGet$2(java.lang.String,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):77:106 -> a
+    287:287:void lambda$resolveUrlWithGet$0(com.ssp.sdk.network.NetworkClient$ResolveUrlCallback,int,java.lang.String,int,java.lang.String):101:101 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lc/a;ILjava/lang/String;ILjava/lang/String;)V"}
+    288:288:void lambda$resolveUrlWithGet$1(com.ssp.sdk.network.NetworkClient$ResolveUrlCallback,java.lang.Exception):106:106 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lc/a;Ljava/lang/Exception;)V"}
+    289:289:void sendPostRequest(java.lang.String,java.lang.String,com.ssp.sdk.network.NetworkClient$Callback):113:113 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;Ld/b;)V"}
+    290:318:void lambda$sendPostRequest$6(java.lang.String,java.lang.String,com.ssp.sdk.network.NetworkClient$Callback):116:144 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;Ljava/lang/String;Ld/b;)V"}
+    319:348:void lambda$sendPostRequest$6(java.lang.String,java.lang.String,com.ssp.sdk.network.NetworkClient$Callback):127:156 -> a
+    349:349:void lambda$sendPostRequest$6(java.lang.String,java.lang.String,com.ssp.sdk.network.NetworkClient$Callback):154:154 -> a
+    350:350:void lambda$sendPostRequest$3(com.ssp.sdk.network.NetworkClient$Callback,int,java.lang.String):139:139 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ld/b;ILjava/lang/String;)V"}
+    351:351:void com.ssp.sdk.util.ReportManager$1.onSuccess(int,java.lang.String):125:125 -> a
+    351:351:void lambda$sendPostRequest$3(com.ssp.sdk.network.NetworkClient$Callback,int,java.lang.String):139 -> a
+    352:352:void lambda$sendPostRequest$4(com.ssp.sdk.network.NetworkClient$Callback,int):144:144 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ld/b;I)V"}
+    353:353:void com.ssp.sdk.util.ReportManager$1.onError(int,java.lang.String):130:130 -> a
+    353:353:void lambda$sendPostRequest$4(com.ssp.sdk.network.NetworkClient$Callback,int):144 -> a
+    354:354:void lambda$sendPostRequest$5(com.ssp.sdk.network.NetworkClient$Callback,java.lang.Exception):150:150 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ld/b;Ljava/lang/Exception;)V"}
+    355:355:void com.ssp.sdk.util.ReportManager$1.onError(int,java.lang.String):130:130 -> a
+    355:355:void lambda$sendPostRequest$5(com.ssp.sdk.network.NetworkClient$Callback,java.lang.Exception):150 -> a
+    356:368:void lambda$sendTrackingUrl$7(java.lang.String):167:179 -> a
+    369:374:void lambda$sendTrackingUrl$7(java.lang.String):176:181 -> a
+    375:401:void lambda$resolveUrlWithPostInternal$10(java.lang.String,java.lang.String,int,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):214:240 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;Ljava/lang/String;ILc/a;)V"}
+    402:438:void lambda$resolveUrlWithPostInternal$10(java.lang.String,java.lang.String,int,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):237:273 -> a
+    439:452:void lambda$resolveUrlWithPostInternal$10(java.lang.String,java.lang.String,int,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):260:273 -> a
+    453:490:void lambda$resolveUrlWithPostInternal$10(java.lang.String,java.lang.String,int,com.ssp.sdk.network.NetworkClient$ResolveUrlCallback):252:289 -> a
+    491:500:java.lang.String readErrorStream(java.net.HttpURLConnection):308:317 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/net/HttpURLConnection;)V"}
+    501:505:java.lang.String readErrorStream(java.net.HttpURLConnection):313:317 -> a
+    506:506:java.lang.String readErrorStream(java.net.HttpURLConnection):308:308 -> a
+    1:4:void sendTrackingUrl(java.lang.String):161:164 -> b
+    5:5:void lambda$resolveUrlWithPostInternal$8(com.ssp.sdk.network.NetworkClient$ResolveUrlCallback,int,java.lang.String,int,java.lang.String):284:284 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lc/a;ILjava/lang/String;ILjava/lang/String;)V"}
+    6:6:void lambda$resolveUrlWithPostInternal$9(com.ssp.sdk.network.NetworkClient$ResolveUrlCallback,java.lang.Exception):289:289 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lc/a;Ljava/lang/Exception;)V"}
+    7:15:java.lang.String readResponseBody(java.net.HttpURLConnection):296:304 -> b
+    16:16:java.lang.String readResponseBody(java.net.HttpURLConnection):296:296 -> b
+com.ssp.sdk.network.NetworkClient$ResolveUrlCallback -> c.a:
+# {"id":"sourceFile","fileName":"NetworkClient.java"}
+    void onFailure(java.lang.String) -> a
+    void onResolved(int,java.lang.String,int,java.lang.String) -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(IILjava/lang/String;Ljava/lang/String;)V"}
+com.ssp.sdk.util.DeviceInfoManager -> d.a:
+# {"id":"sourceFile","fileName":"DeviceInfoManager.java"}
+    android.content.Context context -> a
+    int deviceW -> b
+    int deviceH -> c
+    java.lang.String ua -> d
+    java.lang.String osv -> e
+    java.lang.String brand -> f
+    java.lang.String model -> g
+    java.lang.String ifa -> h
+    java.lang.String ip -> i
+    int connectionType -> j
+    java.lang.Double latitude -> k
+    java.lang.Double longitude -> l
+    java.lang.String language -> m
+    java.lang.String region -> n
+    java.lang.String city -> o
+    java.lang.String country -> p
+    java.lang.String timezone -> q
+    java.lang.String countryCodeIso3 -> r
+    com.ssp.sdk.util.DeviceInfoManager instance -> s
+    java.util.Map ISO2_TO_ISO3 -> t
+    1:11:void <clinit>():54:64 -> <clinit>
+    1:1:void <init>(android.content.Context):67:67 -> <init>
+    2:32:void <init>(android.content.Context):40:70 -> <init>
+    1:4:com.ssp.sdk.util.DeviceInfoManager getInstance(android.content.Context):74:77 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/content/Context;)Ld/a;"}
+    5:54:void fetchDeviceInfo():129:178 -> a
+    55:463:java.lang.String com.ssp.sdk.util.DeviceInfoManager.getGmsIfa(android.content.Context):0:408 -> a
+    55:463:void fetchDeviceInfo():178 -> a
+    464:472:void fetchDeviceInfo():179:187 -> a
+    473:492:java.lang.String com.ssp.sdk.util.IpUtils.getLocalIp(android.content.Context):15:34 -> a
+    473:492:void fetchDeviceInfo():192 -> a
+    493:494:void fetchDeviceInfo():192:193 -> a
+    495:526:int com.ssp.sdk.util.DeviceInfoManager.getConnectionType(android.content.Context):327:358 -> a
+    495:526:void fetchDeviceInfo():193 -> a
+    527:533:void fetchDeviceInfo():193:199 -> a
+    534:557:void com.ssp.sdk.util.DeviceInfoManager.fetchLocation():364:387 -> a
+    534:557:void fetchDeviceInfo():202 -> a
+    558:558:void fetchDeviceInfo():203:203 -> a
+    559:568:java.lang.String convertIso2ToIso3(java.lang.String):208:217 -> a
+    569:650:boolean fetchGeoInfo(java.lang.String,boolean):234:315 -> a
+    1:8:void fetchIpApiInfo():222:229 -> b
+    1:1:int getScreenWidth():81:81 -> c
+    1:4:void lambda$fetchIpApiInfo$0():224:227 -> d
+    1:23:java.lang.String toString():415:437 -> toString
+com.ssp.sdk.util.IpUtils -> R8$$REMOVED$$CLASS$$0:
+# {"id":"sourceFile","fileName":"IpUtils.java"}
+com.ssp.sdk.util.ReportManager -> d.c:
+# {"id":"sourceFile","fileName":"ReportManager.java"}
+    java.util.concurrent.BlockingQueue eventQueue -> a
+    java.util.Set pendingEventKeys -> b
+    java.util.concurrent.ScheduledExecutorService scheduler -> c
+    long lastEventTime -> d
+    com.ssp.sdk.util.ReportManager instance -> e
+    1:1:void <init>():42:42 -> <init>
+    2:16:void <init>():29:43 -> <init>
+    1:18:void report(com.ssp.sdk.data.ReportEvent):57:74 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lb/f;)V"}
+    19:41:void flush():90:112 -> a
+    42:50:org.json.JSONObject com.ssp.sdk.data.ReportEvent.toJson():26:34 -> a
+    42:50:void flush():112 -> a
+    51:59:void flush():114:122 -> a
+    1:4:com.ssp.sdk.util.ReportManager getInstance():47:50 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()Ld/c;"}
+    1:4:void lambda$startScheduler$0():81:84 -> c
+    1:1:void startScheduler():80:80 -> d
+com.ssp.sdk.util.ReportManager$1 -> d.b:
+# {"id":"sourceFile","fileName":"ReportManager.java"}
+    1:1:void <init>(com.ssp.sdk.util.ReportManager):122:122 -> <init>
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()V"}
+com.ssp.sdk.util.SspConfigManager -> d.d:
+# {"id":"sourceFile","fileName":"SspConfigManager.java"}
+    java.util.Map slotRefreshIntervals -> a
+    com.ssp.sdk.util.SspConfigManager instance -> b
+    1:1:void <init>():12:12 -> <init>
+    2:2:void <init>():9:9 -> <init>
+    1:1:int getRefreshInterval(java.lang.String):28:28 -> a
+com.ssp.sdk.util.VideoCacheManager -> d.e:
+# {"id":"sourceFile","fileName":"VideoCacheManager.java"}
+    java.util.Set downloadingUrls -> a
+    com.ssp.sdk.util.VideoCacheManager instance -> b
+    1:1:void <init>():19:19 -> <init>
+    2:2:void <init>():17:17 -> <init>
+    1:4:com.ssp.sdk.util.VideoCacheManager getInstance():22:25 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()Ld/e;"}
+    5:5:void cacheVideo(android.content.Context,java.lang.String):29:29 -> a
+    6:7:java.io.File com.ssp.sdk.util.VideoCacheManager.getCacheFile(android.content.Context,java.lang.String):94:95 -> a
+    6:7:boolean com.ssp.sdk.util.VideoCacheManager.isCached(android.content.Context,java.lang.String):77 -> a
+    6:7:void cacheVideo(android.content.Context,java.lang.String):30 -> a
+    8:8:boolean com.ssp.sdk.util.VideoCacheManager.isCached(android.content.Context,java.lang.String):78:78 -> a
+    8:8:void cacheVideo(android.content.Context,java.lang.String):30 -> a
+    9:51:void cacheVideo(android.content.Context,java.lang.String):31:73 -> a
+    52:59:void lambda$cacheVideo$0(java.lang.String,android.content.Context):37:44 -> a
+    60:61:java.io.File com.ssp.sdk.util.VideoCacheManager.getCacheFile(android.content.Context,java.lang.String):94:95 -> a
+    60:61:void lambda$cacheVideo$0(java.lang.String,android.content.Context):45 -> a
+    62:78:void lambda$cacheVideo$0(java.lang.String,android.content.Context):46:62 -> a
+    79:102:void lambda$cacheVideo$0(java.lang.String,android.content.Context):48:71 -> a
+    103:108:void lambda$cacheVideo$0(java.lang.String,android.content.Context):66:71 -> a
+    109:112:void lambda$cacheVideo$0(java.lang.String,android.content.Context):69:72 -> a
+    113:124:java.lang.String md5(java.lang.String):103:114 -> a
