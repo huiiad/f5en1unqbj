@@ -1,0 +1,11 @@
+
+.gradle
+.idea
+.trea
+.vscode
+build/
+
+/.trae/
+/.vscode/
+/.idea/
+/build/
