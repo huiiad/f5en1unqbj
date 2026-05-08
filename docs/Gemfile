@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+gems "jekyll-remote-theme"
+gems "jekyll-seo-tag"
+gems "jekyll-github-metadata"
+gems "jemoji"
+gems "jekyll-relative-links"
+gem "github-pages", group: :jekyll_plugins

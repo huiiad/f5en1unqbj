@@ -1,0 +1,84 @@
+name: Deploy Documentation to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'docs/**'
+      - '.github/workflows/docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@3574cee
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+          working-directory: 'docs'
+
+      - name: Install dependencies
+        run: |
+          cd docs
+          bundle install
+        working-directory: ${{ github.workspace }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Build with Jekyll
+        run: |
+          bundle exec jekyll build
+        working-directory: ${{ github.workspace }}/docs
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs/_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Fallback: Simple HTML deploy if Jekyll fails
+  deploy-simple:
+    needs: [deploy]
+    if: ${{ failure() }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact (HTML fallback)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
