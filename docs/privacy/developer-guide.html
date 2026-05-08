@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSP SDK 开发者隐私合规指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .nav {
+            background: #f8f9fa;
+            padding: 15px 30px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .content {
+            padding: 40px 50px;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: #1a1a1a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        h1 { font-size: 32px; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
+        h2 { font-size: 24px; color: #667eea; }
+        h3 { font-size: 20px; }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .checklist li {
+            padding: 10px 15px;
+            background: #f8f9fa;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+            font-size: 0.9em;
+            color: #e83e8c;
+        }
+        
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+        
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background: #f8f9fa;
+            color: #555;
+        }
+        
+        blockquote p {
+            margin: 0;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 30px 0;
+        }
+        
+        strong {
+            color: #667eea;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .card h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+        
+        .qna {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .qna h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 开发者隐私合规指南</h1>
+            <p class="subtitle">SSP SDK 开发者集成隐私合规指南</p>
+        </div>
+        
+        <div class="nav">
+            <a href="https://huiiad.github.io/f5en1unqbj/">← 返回首页</a>
+            <a href="index.html">隐私权政策 →</a>
+        </div>
+        
+        <div class="content">
+            <h1>概述</h1>
+            <p>本指南旨在帮助开发者正确集成 SSP SDK，并确保符合隐私保护法规的要求。本指南作为 <a href="index.html">SSP SDK 隐私权政策</a> 的补充，提供具体的实施建议和最佳实践。</p>
+
+            <h1>隐私合规清单</h1>
+
+            <h2>必检项</h2>
+            <ul class="checklist">
+                <li>☑️ 在应用隐私政策中披露 SSP SDK 数据收集</li>
+                <li>☑️ 实施最终用户同意机制</li>
+                <li>☑️ 提供用户退出广告追踪的选项</li>
+                <li>☑️ 未满 13 岁儿童应用需额外处理</li>
+            </ul>
+
+            <h2>推荐项</h2>
+            <ul class="checklist">
+                <li>○ 在权限请求时说明用途</li>
+                <li>○ 提供应用内隐私设置</li>
+                <li>○ 记录用户同意状态</li>
+            </ul>
+
+            <h1>隐私政策披露模板</h1>
+
+            <h2>基本披露文本</h2>
+            <p>建议在您的隐私政策中添加以下内容：</p>
+
+            <blockquote>
+                <p><strong>广告服务</strong></p>
+                <p>我们的应用集成了第三方广告 SDK（SSP SDK），用于在应用中展示广告。在提供广告服务的过程中，SSP SDK 可能会收集以下信息：</p>
+                <ul>
+                    <li><strong>设备信息</strong>：设备品牌、型号、屏幕尺寸、操作系统版本</li>
+                    <li><strong>广告标识符</strong>：Google 广告 ID (GAID)</li>
+                    <li><strong>网络信息</strong>：IP 地址、连接类型</li>
+                    <li><strong>地理位置</strong>：经纬度坐标（需用户授权）</li>
+                    <li><strong>广告交互数据</strong>：广告展示、点击等事件</li>
+                </ul>
+                <p>这些信息用于：</p>
+                <ul>
+                    <li>提供个性化广告</li>
+                    <li>广告效果统计</li>
+                    <li>防止无效广告流量</li>
+                </ul>
+                <p>您可以通过以下方式限制广告追踪：</p>
+                <ul>
+                    <li>设备设置 > Google > 广告 > 退出广告个性化</li>
+                    <li>或联系：<a href="mailto:privacy@ssp-sdk.com">privacy@ssp-sdk.com</a></li>
+                </ul>
+                <p>详情请参阅：<a href="https://huiiad.github.io/f5en1unqbj/privacy/index.html">SSP SDK 隐私权政策</a></p>
+            </blockquote>
+
+            <h2>儿童应用附加要求</h2>
+            <p>如果您的应用面向 13 岁以下儿童，请添加：</p>
+
+            <blockquote>
+                <p><strong>儿童隐私</strong></p>
+                <p>我们不会故意收集 13 岁以下儿童的个人信息。如果您的应用面向儿童，请确保：</p>
+                <ol>
+                    <li>获得监护人的明确同意</li>
+                    <li>遵守 COPPA（儿童在线隐私保护法）等相关法规</li>
+                    <li>限制定向广告的使用</li>
+                </ol>
+            </blockquote>
+
+            <h1>权限使用说明</h1>
+
+            <h2>必须声明的权限</h2>
+            <pre><code>&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;</code></pre>
+
+            <h2>可选权限（用于增强广告定向）</h2>
+            <pre><code>&lt;!-- 精确定位 --&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /&gt;
+
+&lt;!-- 粗略定位 --&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /&gt;
+
+&lt;!-- WiFi 状态 --&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;</code></pre>
+
+            <h1>常见问题</h1>
+
+            <div class="qna">
+                <h3>Q: SSP SDK 会收集哪些敏感信息？</h3>
+                <p><strong>A:</strong> SSP SDK 会收集：</p>
+                <ul>
+                    <li>广告标识符（GAID）</li>
+                    <li>IP 地址</li>
+                    <li>设备信息（品牌、型号、屏幕尺寸）</li>
+                    <li>位置信息（需用户授权）</li>
+                </ul>
+            </div>
+
+            <div class="qna">
+                <h3>Q: 如何帮助用户退出广告追踪？</h3>
+                <p><strong>A:</strong> 引导用户前往系统设置：</p>
+                <ol>
+                    <li>设置 > Google > 广告 > 退出广告个性化</li>
+                </ol>
+                <p>或使用代码打开系统广告设置页面：</p>
+                <pre><code>Intent intent = new Intent(Settings.ACTION_AD_SETTINGS);
+startActivity(intent);</code></pre>
+            </div>
+
+            <div class="qna">
+                <h3>Q: SDK 初始化时需要用户同意吗？</h3>
+                <p><strong>A:</strong> 我们建议在 SDK 初始化前获取用户同意。您可以：</p>
+                <ol>
+                    <li>显示隐私说明对话框</li>
+                    <li>用户同意后再调用 <code>SspSdk.init()</code></li>
+                    <li>记录用户的同意状态</li>
+                </ol>
+            </div>
+
+            <div class="qna">
+                <h3>Q: 如果用户拒绝同意怎么办？</h3>
+                <p><strong>A:</strong> 您可以选择：</p>
+                <ul>
+                    <li>不展示广告</li>
+                    <li>展示不基于用户数据的通用广告</li>
+                    <li>记录拒绝状态，但不阻止用户使用应用</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h1>联系我厜</h1>
+            <ul>
+                <li>技术支持：<a href="mailto:support@ssp-sdk.com">support@ssp-sdk.com</a></li>
+                <li>隐私咨询：<a href="mailto:privacy@ssp-sdk.com">privacy@ssp-sdk.com</a></li>
+                <li>数据保护官：<a href="mailto:dpo@ssp-sdk.com">dpo@ssp-sdk.com</a></li>
+            </ul>
+
+            <hr>
+
+            <h1>更新日志</h1>
+            <table>
+                <tr><th>日期</th><th>版本</th><th>变更内容</th></tr>
+                <tr><td>2024-01-01</td><td>1.0</td><td>初始版本</td></tr>
+            </table>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 SSP SDK. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:privacy@ssp-sdk.com">隐私咨询</a> · 
+                <a href="mailto:support@ssp-sdk.com">技术支持</a> · 
+                <a href="https://github.com/huiiad/f5en1unqbj">GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

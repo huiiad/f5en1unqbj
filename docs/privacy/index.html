@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSP SDK 隐私权政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .header .date {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .nav {
+            background: #f8f9fa;
+            padding: 15px 30px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .content {
+            padding: 40px 50px;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: #1a1a1a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        h1 { font-size: 32px; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
+        h2 { font-size: 24px; color: #667eea; }
+        h3 { font-size: 20px; }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+            font-size: 0.9em;
+            color: #e83e8c;
+        }
+        
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+        
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background: #f8f9fa;
+            color: #555;
+        }
+        
+        blockquote p {
+            margin: 0;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 30px 0;
+        }
+        
+        strong {
+            color: #667eea;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+            
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 SSP SDK 隐私权政策</h1>
+            <p class="date">生效日期：2024年1月1日</p>
+        </div>
+        
+        <div class="nav">
+            <a href="https://huiiad.github.io/f5en1unqbj/">← 返回首页</a>
+            <a href="developer-guide.html">开发者指南 →</a>
+        </div>
+        
+        <div class="content">
+            <h1>简介</h1>
+            <p>SSP SDK（"我们"、"我们的"或"SSP"）是一家专注于为移动应用开发者提供广告变现解决方案的技术服务提供商。本隐私权政策旨在向您详细说明 SSP SDK 在为您提供服务过程中会收集哪些数据、收集的目的、如何使用这些数据，以及您享有的相关权利。</p>
+
+<blockquote>
+<p><strong>重要提示：</strong> 本隐私权政策是专门为集成 SSP SDK 的应用开发者（即"您"）编写的技术文档。它与您个人应用的隐私政策是独立的文件。当您的应用集成 SSP SDK 时，您有责任：</p>
+<ol>
+<li>在您应用的隐私权政策中向最终用户披露 SSP SDK 的数据收集行为；</li>
+<li>确保您获得最终用户对 SSP SDK 数据收集行为的有效同意；</li>
+<li>遵守您所在司法管辖区关于数据保护和隐私的法律法规。</li>
+</ol>
+</blockquote>
+
+<h1>一、信息收集概述</h1>
+
+<h2>1.1 收集方式</h2>
+<p>我们通过以下方式收集信息：</p>
+<ul>
+<li><strong>自动收集</strong>：当最终用户的设备安装并运行集成 SSP SDK 的应用时，我们会自动收集相关设备和使用信息。</li>
+<li><strong>API 调用</strong>：我们会调用第三方服务（如 Google Play 服务）获取特定标识符信息。</li>
+<li><strong>地理位置查询</strong>：我们会通过 IP 地址查询服务获取用户的地理位置信息。</li>
+</ul>
+
+<h2>1.2 我们收集的信息类型</h2>
+
+<h3>1.2.1 设备和应用信息</h3>
+<table>
+<tr><th>信息类型</th><th>说明</th><th>收集目的</th></tr>
+<tr><td>设备品牌</td><td>制造商名称（如 Samsung, Xiaomi, Huawei）</td><td>广告定向</td></tr>
+<tr><td>设备型号</td><td>具体设备型号（如 Pixel 6, MI 11）</td><td>广告定向</td></tr>
+<tr><td>操作系统版本</td><td>Android 系统版本号（如 13, 14）</td><td>兼容性适配</td></tr>
+<tr><td>屏幕尺寸</td><td>设备屏幕分辨率（宽度 x 高度）</td><td>广告展示优化</td></tr>
+<tr><td>用户代理 (User-Agent)</td><td>浏览器默认用户代理字符串</td><td>广告内容适配</td></tr>
+<tr><td>语言设置</td><td>设备首选语言</td><td>广告定向</td></tr>
+<tr><td>国家/地区</td><td>根据 IP 或系统设置确定</td><td>广告定向</td></tr>
+<tr><td>时区</td><td>设备所在时区</td><td>广告时段优化</td></tr>
+</table>
+
+<h3>1.2.2 广告标识符</h3>
+<table>
+<tr><th>信息类型</th><th>说明</th><th>收集目的</th></tr>
+<tr><td>Google 广告 ID (GAID)</td><td>Android 设备的唯一广告标识符</td><td>广告追踪与归因</td></tr>
+<tr><td>Android ID</td><td>设备的 Android ID（当 GAID 不可用时作为备选）</td><td>广告追踪与归因</td></tr>
+</table>
+
+<h3>1.2.3 网络连接信息</h3>
+<table>
+<tr><th>信息类型</th><th>说明</th><th>收集目的</th></tr>
+<tr><td>IP 地址</td><td>设备的网络 IP 地址</td><td>地理位置定位</td></tr>
+<tr><td>连接类型</td><td>Wi-Fi / 移动网络 / 以太网</td><td>广告质量优化</td></tr>
+<tr><td>网络运营商</td><td>移动网络运营商名称</td><td>广告定向</td></tr>
+</table>
+
+<h3>1.2.4 地理位置信息</h3>
+<table>
+<tr><th>信息类型</th><th>说明</th><th>收集目的</th></tr>
+<tr><td>经纬度坐标</td><td>GPS 或网络定位提供的坐标（需用户授权）</td><td>本地化广告</td></tr>
+<tr><td>城市/地区</td><td>基于 IP 或定位服务的地理区域</td><td>广告定向</td></tr>
+</table>
+
+<blockquote>
+<p><strong>注意：</strong> 地理位置信息的收集依赖于最终用户的授权许可。如果用户拒绝授予位置权限，我们不会收集精确的经纬度坐标。</p>
+</blockquote>
+
+<h3>1.2.5 广告事件数据</h3>
+<table>
+<tr><th>信息类型</th><th>说明</th><th>收集目的</th></tr>
+<tr><td>广告请求事件</td><td>广告加载请求的时间戳和应用信息</td><td>服务质量分析</td></tr>
+<tr><td>广告展示事件</td><td>广告实际展示的时间和广告信息</td><td>展示统计</td></tr>
+<tr><td>广告点击事件</td><td>用户点击广告的时间和广告信息</td><td>点击统计</td></tr>
+<tr><td>广告转化事件</td><td>用户完成预期操作的信息</td><td>转化归因</td></tr>
+</table>
+
+<h1>二、信息使用目的</h1>
+
+<h2>2.1 广告投放与优化</h2>
+<ul>
+<li><strong>广告定向</strong>：利用设备信息、地理位置和广告标识符向用户展示相关性更高的广告。</li>
+<li><strong>广告竞价</strong>：在程序化广告竞价中提供必要的出价信息。</li>
+<li><strong>频次控制</strong>：防止同一用户看到过多重复广告。</li>
+<li><strong>反作弊</strong>：检测和防止无效流量和欺诈行为。</li>
+</ul>
+
+<h2>2.2 服务质量保障</h2>
+<ul>
+<li><strong>性能监控</strong>：分析广告加载速度、展示成功率等指标。</li>
+<li><strong>故障排查</strong>：当出现技术问题时，收集相关数据用于诊断。</li>
+<li><strong>统计分析</strong>：汇总广告效果数据，用于生成业务报告。</li>
+</ul>
+
+<h2>2.3 合规要求</h2>
+<ul>
+<li><strong>法律法规遵守</strong>：按照适用法律的要求保留必要的记录。</li>
+<li><strong>争议解决</strong>：在必要时使用数据进行法律争议的解决。</li>
+</ul>
+
+<h1>三、信息共享</h1>
+
+<h2>3.1 我们不会共享的信息</h2>
+<p>我们承诺：</p>
+<ul>
+<li>不会将广告标识符与其他可识别个人身份的信息关联。</li>
+<li>不会出售最终用户的个人信息。</li>
+<li>不会将收集的信息用于非广告投放以外的其他目的。</li>
+</ul>
+
+<h2>3.2 可能的共享情形</h2>
+<table>
+<tr><th>情形</th><th>说明</th></tr>
+<tr><td>服务提供商</td><td>与帮助我们提供服务的合作伙伴共享，这些伙伴受保密协议约束</td></tr>
+<tr><td>法律要求</td><td>根据法律义务、法院命令或政府要求进行披露</td></tr>
+<tr><td>权利保护</td><td>为保护我们或第三方的权利、财产或安全</td></tr>
+<tr><td>业务转让</td><td>在合并、收购或资产出售等商业交易中转让</td></tr>
+</table>
+
+<h2>3.3 第三方服务</h2>
+<p>我们的 SDK 可能会调用以下第三方服务：</p>
+<table>
+<tr><th>服务</th><th>提供商</th><th>用途</th><th>隐私政策</th></tr>
+<tr><td>Google Play 服务</td><td>Google LLC</td><td>获取广告标识符</td><td><a href="https://policies.google.com/privacy">Google 隐私政策</a></td></tr>
+<tr><td>IP 地理位置服务</td><td>ipapi.co / ipwho.is</td><td>确定用户地理位置</td><td>参见各服务提供商官网</td></tr>
+</table>
+
+<h1>四、最终用户权利</h1>
+
+<h2>4.1 限制广告追踪</h2>
+<p>最终用户可以通过以下方式限制广告追踪：</p>
+<ol>
+<li>打开设备「设置」</li>
+<li>进入「Google」→「广告」</li>
+<li>启用「退出广告个性化」</li>
+</ol>
+
+<h2>4.2 重置广告标识符</h2>
+<p>用户可以随时重置其广告标识符：</p>
+<ol>
+<li>打开设备「设置」</li>
+<li>进入「Google」→「广告」</li>
+<li>点击「重置广告 ID」</li>
+</ol>
+
+<h1>五、数据安全</h1>
+
+<h2>5.1 安全措施</h2>
+<p>我们采用以下安全措施保护数据：</p>
+<ul>
+<li><strong>传输加密</strong>：SDK 与服务器之间的通信使用 HTTPS 协议。</li>
+<li><strong>访问控制</strong>：严格限制对服务器和数据的访问权限。</li>
+<li><strong>定期审计</strong>：定期进行安全审计和风险评估。</li>
+</ul>
+
+<h1>六、数据保留</h1>
+
+<table>
+<tr><th>数据类型</th><th>保留期限</th></tr>
+<tr><td>广告事件数据</td><td>24 个月</td></tr>
+<tr><td>设备信息（匿名化后）</td><td>18 个月</td></tr>
+<tr><td>用户请求删除的数据</td><td>立即删除</td></tr>
+</table>
+
+<h1>七、儿童隐私</h1>
+<p>我们<strong>不会故意收集</strong> 13 周岁以下儿童的个人信息。我们要求集成 SSP SDK 的应用开发者：</p>
+<ol>
+<li>确保其应用不面向 13 周岁以下儿童。</li>
+<li>如果应用面向儿童，应在隐私政策中明确说明。</li>
+<li>确保获得监护人对数据收集的有效同意。</li>
+</ol>
+
+<h1>八、开发者义务</h1>
+
+<h2>8.1 隐私政策披露</h2>
+<p>作为集成 SSP SDK 的开发者，您需要：</p>
+<ol>
+<li><strong>独立隐私政策</strong>：维护您自己的隐私权政策。</li>
+<li><strong>SDK 数据披露</strong>：在您的隐私政策中明确说明 SSP SDK 的数据收集行为。</li>
+<li><strong>同意机制</strong>：确保获得最终用户对数据收集的适当同意。</li>
+<li><strong>权利保障</strong>：为用户提供行使隐私权利的渠道。</li>
+</ol>
+
+<h2>8.2 建议披露文本</h2>
+<blockquote>
+<p>我们的应用集成了 SSP SDK，用于广告展示和变现。在提供广告服务的过程中，SSP SDK 可能会收集以下信息：</p>
+<ul>
+<li>设备信息（品牌、型号、屏幕尺寸、操作系统版本）</li>
+<li>广告标识符（Google 广告 ID）</li>
+<li>网络信息（IP 地址、连接类型）</li>
+<li>地理位置信息（需用户授权）</li>
+<li>广告交互事件</li>
+</ul>
+<p>SSP SDK 收集这些信息的目的是提供和改进广告服务。详情请参阅 <a href="https://huiiad.github.io/f5en1unqbj/privacy/index.html">SSP SDK 隐私权政策</a>。</p>
+</blockquote>
+
+<h1>九、联系我们</h1>
+
+<p>如对本隐私权政策有任何疑问，请通过以下方式联系我们：</p>
+<ul>
+<li><strong>电子邮箱</strong>：<a href="mailto:privacy@ssp-sdk.com">privacy@ssp-sdk.com</a></li>
+<li><strong>开发者支持</strong>：<a href="mailto:support@ssp-sdk.com">support@ssp-sdk.com</a></li>
+</ul>
+
+<hr>
+
+<p style="text-align: center; color: #999; margin-top: 40px;">
+<strong>感谢您阅读 SSP SDK 隐私权政策。</strong><br>
+我们致力于保护用户隐私，同时为开发者提供优质的广告变现服务。
+</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 SSP SDK. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:privacy@ssp-sdk.com">隐私咨询</a> · 
+                <a href="mailto:support@ssp-sdk.com">技术支持</a> · 
+                <a href="https://github.com/huiiad/f5en1unqbj">GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
