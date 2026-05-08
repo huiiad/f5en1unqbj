@@ -1,4 +1,4 @@
-# SSP SDK 发布指南
+# HuiiAd SDK 发布指南
 
 ## Maven 发布选项
 
@@ -51,7 +51,7 @@ gpr.token=你的GitHub Personal Access Token
 **步骤 3: 发布**
 
 ```bash
-./gradlew ssp-sdk:publishReleasePublicationToMavenRepository
+./gradlew ssp_sdk:publishReleasePublicationToGitHubPackagesRepository
 ```
 
 **使用方法：**
@@ -73,7 +73,7 @@ dependencyResolutionManagement {
 
 // app/build.gradle
 dependencies {
-    implementation 'com.ssp.sdk:ssp-sdk:1.0.0'
+    implementation 'io.github.huiiad:ssp-sdk:1.0.0'
 }
 ```
 
@@ -85,7 +85,7 @@ dependencies {
 
 1. 访问 https://issues.sonatype.org
 2. 创建 Jira 账号
-3. 创建 Issue 申请 Group ID（例如 `com.ssp.sdk`）
+3. 创建 Issue 申请 Group ID（例如 `io.github.huiiad`）
 
 **步骤 2: 配置签名密钥**
 
@@ -103,10 +103,10 @@ publishing {
     publications {
         release(MavenPublication) {
             // ... 其他配置 ...
-            
+
             pom {
                 // ...
-                
+
                 repositories {
                     maven {
                         name = "MavenCentral"
@@ -126,7 +126,7 @@ publishing {
 **步骤 4: 发布**
 
 ```bash
-./gradlew ssp-sdk:publishReleasePublicationToMavenRepository
+./gradlew ssp_sdk:publishReleasePublicationToMavenCentralRepository
 ```
 
 ---
@@ -171,7 +171,7 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     projects {
-        include ':ssp-sdk'
+        include ':ssp_sdk'
     }
     repositories {
         google()
@@ -189,8 +189,8 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ssp_sdk_android"
-include ':ssp-sdk'
+rootProject.name = "HuiiAdSdkProject"
+include ':ssp_sdk'
 include ':demo_app'
 ```
 
@@ -199,7 +199,7 @@ include ':demo_app'
 ```gradle
 // app/build.gradle
 dependencies {
-    implementation 'com.ssp.sdk:ssp-sdk:1.0.0'
+    implementation 'io.github.huiiad:ssp-sdk:1.0.0'
 }
 ```
 
@@ -216,13 +216,13 @@ dependencies {
 在文档中添加版本检查说明，或使用 `+` 代替版本号（不推荐生产环境）：
 
 ```gradle
-implementation 'com.ssp.sdk:ssp-sdk:+'
+implementation 'io.github.huiiad:ssp-sdk:+'
 ```
 
 ### Q: 如何处理依赖冲突？
 
 ```gradle
-implementation('com.ssp.sdk:ssp-sdk:1.0.0') {
+implementation('io.github.huiiad:ssp-sdk:1.0.0') {
     exclude group: 'com.android.support', module: 'appcompat-v7'
 }
 ```

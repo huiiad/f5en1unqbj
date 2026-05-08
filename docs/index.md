@@ -1,12 +1,12 @@
-# SSP SDK Android 开发者文档
+# HuiiAd SDK Android 开发者文档
 
-欢迎使用 SSP SDK！本 SDK 为 Android 应用开发者提供全面的广告变现解决方案。
+欢迎使用 HuiiAd SDK！本 SDK 为 Android 应用开发者提供全面的广告变现解决方案。
 
 ## 📚 文档目录
 
 ### 隐私合规
 
-- [隐私权政策](./privacy/index.md) - SSP SDK 官方隐私政策
+- [隐私权政策](./privacy/index.md) - HuiiAd SDK 官方隐私政策
 - [开发者隐私合规指南](./privacy/developer-guide.md) - 开发者集成指南
 
 ### API 文档
@@ -56,7 +56,7 @@ public class MyApp extends Application {
 
 ## 🔒 隐私合规
 
-集成 SSP SDK 前，请确保：
+集成 HuiiAd SDK 前，请确保：
 
 1. 阅读 [隐私权政策](./privacy/index.md)
 2. 遵循 [开发者隐私合规指南](./privacy/developer-guide.md)
@@ -69,4 +69,4 @@ public class MyApp extends Application {
 
 ## 📄 许可证
 
-Copyright © 2024 SSP SDK. All rights reserved.
+Copyright © 2024 HuiiAd SDK. All rights reserved.

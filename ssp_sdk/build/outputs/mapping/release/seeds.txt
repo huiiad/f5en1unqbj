@@ -1,150 +1,150 @@
-com.ssp.sdk.SspSdk
+com.ssp.sdk.ad.SspBannerAd
+com.ssp.sdk.ad.BaseAd
+io.github.huiiad.R
 com.ssp.sdk.ad.SspVideoAd
+com.ssp.sdk.data.AdType
+com.ssp.sdk.ad.SspNativeAd
 com.ssp.sdk.ad.SspFullScreenVideoActivity
 com.ssp.sdk.ad.SspLoadListener
 com.ssp.sdk.ad.SspInteractionListener
-com.ssp.sdk.R
-com.ssp.sdk.ad.SspBannerAd
-com.ssp.sdk.ad.BaseAd
-com.ssp.sdk.ad.SspNativeAd
-com.ssp.sdk.data.AdType
-com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType VIDEO
-com.ssp.sdk.data.NativeResponse$EventTracker: int method
-com.ssp.sdk.data.AdResponse: int width
-com.ssp.sdk.data.VideoResponse$MediaFile: java.lang.String url
-com.ssp.sdk.data.VideoResponse$EndCard: java.lang.String imageUrl
-com.ssp.sdk.data.ReportEvent: java.lang.String appId
-com.ssp.sdk.data.NativeResponse: java.lang.String privacyUrl
-com.ssp.sdk.data.NativeResponse$EventTracker: int event
-com.ssp.sdk.data.AdResponse: java.lang.String billingType
-com.ssp.sdk.data.AdRequest: int width
-com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType BANNER
-com.ssp.sdk.data.AdRequest: java.lang.String adType
-com.ssp.sdk.data.ReportEvent: java.lang.String event
-com.ssp.sdk.data.AdResponse: java.lang.String clickUrl
-com.ssp.sdk.data.NativeResponse: java.lang.String iconUrl
-com.ssp.sdk.data.AdResponse: java.lang.String ext
-com.ssp.sdk.data.VideoResponse: boolean skippable
+com.ssp.sdk.SspSdk
 com.ssp.sdk.data.ReportEvent: java.lang.String adId
-com.ssp.sdk.data.NativeResponse: int imageWidth
-com.ssp.sdk.data.ReportEvent: int status
-com.ssp.sdk.data.VideoResponse$MediaFile: int width
-com.ssp.sdk.data.VideoResponse$MediaFile: int height
-com.ssp.sdk.data.NativeResponse$EventTracker: java.lang.String url
-com.ssp.sdk.data.VideoResponse$EndCard: java.util.List clickTrackers
-com.ssp.sdk.data.AdResponse: java.util.List adomain
-com.ssp.sdk.data.NativeResponse: java.lang.String cta
 com.ssp.sdk.data.VideoResponse: java.lang.String title
-com.ssp.sdk.data.AdResponse: java.lang.String currency
-com.ssp.sdk.data.AdResponse: java.lang.String dealId
-com.ssp.sdk.data.NativeResponse: java.lang.String body
-com.ssp.sdk.data.NativeResponse: int imageHeight
-com.ssp.sdk.data.AdResponse: java.util.List impTrackers
-com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType NATIVE
-com.ssp.sdk.data.NativeResponse: java.util.List eventTrackers
-com.ssp.sdk.data.ReportEvent: java.lang.String title
-com.ssp.sdk.data.NativeResponse: java.lang.String title
-com.ssp.sdk.data.ReportEvent: long timestamp
-com.ssp.sdk.data.AdResponse: java.util.List clickTrackers
-com.ssp.sdk.data.VideoResponse: java.util.Map trackingEvents
-com.ssp.sdk.data.VideoResponse: java.util.List mediaFiles
-com.ssp.sdk.data.VideoResponse: com.ssp.sdk.data.VideoResponse$EndCard endCard
-com.ssp.sdk.data.VideoResponse$EndCard: java.lang.Integer height
-com.ssp.sdk.ad.SspFullScreenVideoActivity: com.ssp.sdk.ad.SspVideoAd videoAd
-com.ssp.sdk.data.VideoResponse: java.lang.String linearity
-com.ssp.sdk.data.VideoResponse: java.lang.String videoUrl
-com.ssp.sdk.data.NativeResponse: java.lang.String imageUrl
-com.ssp.sdk.data.VideoResponse$EndCard: java.lang.String type
-com.ssp.sdk.data.VideoResponse$EndCard: java.lang.String htmlContent
-com.ssp.sdk.data.VideoResponse$EndCard: java.lang.Integer width
-com.ssp.sdk.data.AdResponse: java.lang.String impId
-com.ssp.sdk.data.AdRequest: int height
-com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType[] $VALUES
-com.ssp.sdk.data.VideoResponse: boolean rewarded
-com.ssp.sdk.ad.SspFullScreenVideoActivity: com.ssp.sdk.ad.SspVideoView videoView
-com.ssp.sdk.data.AdRequest: java.lang.String adSlotId
-com.ssp.sdk.ad.SspFullScreenVideoActivity: java.lang.String EXTRA_AD_ID
-com.ssp.sdk.data.AdResponse: java.lang.String adType
-com.ssp.sdk.data.NativeResponse: java.lang.String description
-com.ssp.sdk.data.VideoResponse: int duration
-com.ssp.sdk.data.NativeResponse: java.lang.Double rating
-com.ssp.sdk.data.AdResponse: double price
-com.ssp.sdk.data.VideoResponse: int renderHeight
-com.ssp.sdk.data.AdResponse: int height
-com.ssp.sdk.data.VideoResponse$MediaFile: java.lang.String type
-com.ssp.sdk.data.NativeResponse: int iconHeight
-com.ssp.sdk.data.VideoResponse$MediaFile: java.lang.String delivery
-com.ssp.sdk.data.VideoResponse$EndCard: java.lang.String clickUrl
-com.ssp.sdk.data.VideoResponse$EndCard: java.util.List viewTrackers
-com.ssp.sdk.data.VideoResponse$MediaFile: int bitrate
 com.ssp.sdk.data.NativeResponse: int iconWidth
-com.ssp.sdk.data.BannerResponse: java.lang.String htmlContent
-com.ssp.sdk.data.ReportEvent: java.lang.String slotId
-com.ssp.sdk.data.VideoResponse: int renderWidth
+com.ssp.sdk.ad.SspFullScreenVideoActivity: com.ssp.sdk.ad.SspVideoAd videoAd
+com.ssp.sdk.data.VideoResponse$MediaFile: int width
+com.ssp.sdk.data.NativeResponse$EventTracker: int event
+com.ssp.sdk.data.NativeResponse$EventTracker: int method
+com.ssp.sdk.data.VideoResponse$EndCard: java.lang.Integer width
+com.ssp.sdk.data.AdResponse: java.lang.String ext
+com.ssp.sdk.data.AdRequest: int height
+com.ssp.sdk.data.VideoResponse$EndCard: java.lang.Integer height
+com.ssp.sdk.data.VideoResponse: int duration
+com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType VIDEO
+com.ssp.sdk.data.AdResponse: int width
+com.ssp.sdk.data.VideoResponse$EndCard: java.lang.String imageUrl
+com.ssp.sdk.ad.SspFullScreenVideoActivity: java.lang.String EXTRA_AD_ID
+com.ssp.sdk.data.VideoResponse: java.lang.String videoUrl
+com.ssp.sdk.data.VideoResponse$MediaFile: java.lang.String type
 com.ssp.sdk.data.VideoResponse: java.lang.String placement
-com.ssp.sdk.data.AdResponse: java.lang.String creativeId
-com.ssp.sdk.data.ReportEvent: java.lang.String adType
+com.ssp.sdk.data.VideoResponse$MediaFile: int height
+com.ssp.sdk.data.NativeResponse: java.lang.String iconUrl
+com.ssp.sdk.data.NativeResponse: int imageWidth
+com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType[] $VALUES
+com.ssp.sdk.data.NativeResponse: java.lang.String body
+com.ssp.sdk.data.NativeResponse: int iconHeight
+com.ssp.sdk.data.VideoResponse$EndCard: java.lang.String clickUrl
+com.ssp.sdk.data.VideoResponse: boolean skippable
+com.ssp.sdk.data.AdResponse: double price
+com.ssp.sdk.data.NativeResponse: java.lang.String cta
+com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType NATIVE
+com.ssp.sdk.data.NativeResponse: java.lang.String imageUrl
+com.ssp.sdk.data.NativeResponse: java.util.List eventTrackers
+com.ssp.sdk.data.AdResponse: java.util.List adomain
+com.ssp.sdk.data.AdResponse: java.lang.String clickUrl
+com.ssp.sdk.data.NativeResponse: java.lang.String title
+com.ssp.sdk.data.VideoResponse: int renderWidth
+com.ssp.sdk.data.VideoResponse$EndCard: java.util.List clickTrackers
+com.ssp.sdk.data.VideoResponse$EndCard: java.util.List viewTrackers
+com.ssp.sdk.data.NativeResponse: java.lang.String privacyUrl
+com.ssp.sdk.data.VideoResponse$MediaFile: java.lang.String url
+com.ssp.sdk.data.AdRequest: java.lang.String adSlotId
+com.ssp.sdk.data.NativeResponse: int imageHeight
+com.ssp.sdk.data.ReportEvent: java.lang.String event
+com.ssp.sdk.data.AdResponse: java.util.List impTrackers
+com.ssp.sdk.data.ReportEvent: java.lang.String title
+com.ssp.sdk.data.AdResponse: java.lang.String impId
+com.ssp.sdk.data.VideoResponse$EndCard: java.lang.String type
+com.ssp.sdk.data.VideoResponse$MediaFile: int bitrate
+com.ssp.sdk.data.VideoResponse: java.lang.String linearity
 com.ssp.sdk.data.AdResponse: java.lang.String id
-com.ssp.sdk.ad.SspVideoAd: SspVideoAd(android.content.Context,java.lang.String)
-com.ssp.sdk.ad.SspBannerAd: SspBannerAd(android.content.Context,java.lang.String,int,int)
+com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType BANNER
+com.ssp.sdk.data.AdRequest: int width
+com.ssp.sdk.data.ReportEvent: java.lang.String appId
+com.ssp.sdk.data.AdResponse: java.lang.String currency
+com.ssp.sdk.data.AdResponse: java.util.List clickTrackers
+com.ssp.sdk.data.VideoResponse$EndCard: java.lang.String htmlContent
+com.ssp.sdk.data.AdRequest: java.lang.String adType
+com.ssp.sdk.data.NativeResponse: java.lang.String description
+com.ssp.sdk.data.AdResponse: java.lang.String billingType
+com.ssp.sdk.data.NativeResponse: java.lang.Double rating
+com.ssp.sdk.data.AdResponse: java.lang.String creativeId
+com.ssp.sdk.data.VideoResponse: java.util.Map trackingEvents
+com.ssp.sdk.data.ReportEvent: java.lang.String adType
+com.ssp.sdk.data.VideoResponse$MediaFile: java.lang.String delivery
+com.ssp.sdk.data.VideoResponse: java.util.List mediaFiles
+com.ssp.sdk.data.VideoResponse: int renderHeight
+com.ssp.sdk.data.AdResponse: java.lang.String dealId
+com.ssp.sdk.ad.SspFullScreenVideoActivity: com.ssp.sdk.ad.SspVideoView videoView
+com.ssp.sdk.data.VideoResponse: com.ssp.sdk.data.VideoResponse$EndCard endCard
+com.ssp.sdk.data.NativeResponse$EventTracker: java.lang.String url
+com.ssp.sdk.data.VideoResponse: boolean rewarded
+com.ssp.sdk.data.ReportEvent: long timestamp
+com.ssp.sdk.data.ReportEvent: java.lang.String slotId
+com.ssp.sdk.data.AdResponse: java.lang.String adType
+com.ssp.sdk.data.ReportEvent: int status
+com.ssp.sdk.data.BannerResponse: java.lang.String htmlContent
+com.ssp.sdk.data.AdResponse: int height
+com.ssp.sdk.ad.SspInteractionListener: void onAdShowFailed(java.lang.String)
+com.ssp.sdk.ad.SspNativeAd: java.lang.String getIconUrl()
+com.ssp.sdk.SspSdk: android.content.Context getContext()
+com.ssp.sdk.ad.SspVideoAd: com.ssp.sdk.ad.SspVideoView getAdView()
+com.ssp.sdk.ad.SspNativeAd: void registerViewForInteraction(android.view.View)
+com.ssp.sdk.ad.SspLoadListener: void onAdLoaded(com.ssp.sdk.ad.BaseAd)
+com.ssp.sdk.ad.SspVideoAd: com.ssp.sdk.ad.SspVideoAd getActiveAd(java.lang.String)
+io.github.huiiad.R: R()
+com.ssp.sdk.ad.SspBannerAd: SspBannerAd(android.content.Context,java.lang.String)
+com.ssp.sdk.ad.SspFullScreenVideoActivity: SspFullScreenVideoActivity()
 com.ssp.sdk.ad.BaseAd: void setLoadListener(com.ssp.sdk.ad.SspLoadListener)
 com.ssp.sdk.SspSdk: void init(android.content.Context)
-com.ssp.sdk.ad.SspVideoAd: void show(android.view.ViewGroup)
-com.ssp.sdk.ad.SspNativeAd: java.lang.String getCallToAction()
-com.ssp.sdk.ad.SspInteractionListener: void onAdShowFailed(java.lang.String)
-com.ssp.sdk.ad.SspBannerAd: void setInteractionListener(com.ssp.sdk.ad.SspInteractionListener)
-com.ssp.sdk.ad.SspBannerAd: SspBannerAd(android.content.Context,java.lang.String)
-com.ssp.sdk.ad.SspInteractionListener: void onImpression(java.lang.String)
-com.ssp.sdk.ad.SspInteractionListener: void onAdClicked(java.lang.String)
-com.ssp.sdk.ad.SspFullScreenVideoActivity: void onResume()
-com.ssp.sdk.ad.SspBannerAd: boolean isValid()
-com.ssp.sdk.ad.SspLoadListener: void onAdFailed(java.lang.String)
-com.ssp.sdk.ad.SspNativeAd: java.lang.String getBody()
-com.ssp.sdk.ad.SspBannerAd: void setAutoRefresh(boolean)
-com.ssp.sdk.ad.SspBannerAd: void destroy()
-com.ssp.sdk.ad.SspNativeAd: java.lang.Double getRating()
-com.ssp.sdk.ad.SspBannerAd: void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
-com.ssp.sdk.ad.SspBannerAd: SspBannerAd(android.content.Context)
-com.ssp.sdk.ad.SspFullScreenVideoActivity: void onDestroy()
-com.ssp.sdk.ad.SspNativeAd: java.lang.String getIconUrl()
-com.ssp.sdk.ad.BaseAd: com.ssp.sdk.data.AdType getAdType()
-com.ssp.sdk.ad.SspNativeAd: com.ssp.sdk.data.AdType getAdType()
-com.ssp.sdk.ad.BaseAd: boolean isValid()
-com.ssp.sdk.R: R()
-com.ssp.sdk.ad.SspVideoView: void setAdController(com.ssp.sdk.ad.SspVideoAd)
-com.ssp.sdk.ad.SspBannerAd: void pause()
-com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType[] values()
-com.ssp.sdk.ad.BaseAd: void setInteractionListener(com.ssp.sdk.ad.SspInteractionListener)
-com.ssp.sdk.ad.SspVideoAd: boolean isLoaded()
-com.ssp.sdk.SspSdk: com.ssp.sdk.SspSdk getInstance()
-com.ssp.sdk.ad.SspFullScreenVideoActivity: SspFullScreenVideoActivity()
-com.ssp.sdk.ad.SspNativeAd: void registerViewForInteraction(android.view.View)
-com.ssp.sdk.ad.SspBannerAd: void setLoadListener(com.ssp.sdk.ad.SspLoadListener)
+com.ssp.sdk.data.AdType: AdType(java.lang.String,int)
 com.ssp.sdk.ad.SspBannerAd: SspBannerAd(android.content.Context,android.util.AttributeSet,int)
-com.ssp.sdk.ad.SspVideoAd: com.ssp.sdk.ad.SspVideoAd getActiveAd(java.lang.String)
-com.ssp.sdk.ad.SspNativeAd: java.lang.String getImageUrl()
-com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType valueOf(java.lang.String)
+com.ssp.sdk.ad.SspFullScreenVideoActivity: void onPause()
+com.ssp.sdk.ad.SspNativeAd: java.lang.String getDescription()
+com.ssp.sdk.ad.BaseAd: com.ssp.sdk.data.AdType getAdType()
 com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType[] $values()
+com.ssp.sdk.ad.SspBannerAd: void resume()
+com.ssp.sdk.ad.SspBannerAd: void loadAndShow()
+com.ssp.sdk.SspSdk: com.ssp.sdk.SspSdk getInstance()
+com.ssp.sdk.ad.SspNativeAd: com.ssp.sdk.data.AdType getAdType()
+com.ssp.sdk.ad.SspVideoAd: void enableAutoCache(boolean)
+com.ssp.sdk.ad.SspNativeAd: java.lang.String getBody()
+com.ssp.sdk.ad.SspBannerAd: void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+com.ssp.sdk.ad.SspFullScreenVideoActivity: void onCreate(android.os.Bundle)
+com.ssp.sdk.ad.SspVideoAd: boolean isAutoCacheEnabled()
+com.ssp.sdk.ad.SspVideoView: void setAdController(com.ssp.sdk.ad.SspVideoAd)
+com.ssp.sdk.ad.SspBannerAd: SspBannerAd(android.content.Context,java.lang.String,int,int)
+com.ssp.sdk.ad.SspBannerAd: void destroy()
 com.ssp.sdk.ad.SspBannerAd: void showAd()
 com.ssp.sdk.ad.BaseAd: BaseAd(android.content.Context,java.lang.String)
-com.ssp.sdk.ad.SspLoadListener: void onAdLoaded(com.ssp.sdk.ad.BaseAd)
+com.ssp.sdk.ad.SspVideoAd: boolean isLoaded()
 com.ssp.sdk.SspSdk: void init(android.content.Context,java.lang.String)
-com.ssp.sdk.ad.SspFullScreenVideoActivity: void onPause()
-com.ssp.sdk.SspSdk: java.lang.String getAppId()
-com.ssp.sdk.ad.SspNativeAd: java.lang.String getDescription()
-com.ssp.sdk.SspSdk: android.content.Context getContext()
-com.ssp.sdk.ad.SspFullScreenVideoActivity: void onCreate(android.os.Bundle)
-com.ssp.sdk.SspSdk: boolean isInitialized()
-com.ssp.sdk.ad.SspVideoAd: com.ssp.sdk.data.AdType getAdType()
-com.ssp.sdk.ad.SspVideoAd: void showAd(android.app.Activity)
-com.ssp.sdk.ad.SspVideoAd: com.ssp.sdk.ad.SspVideoView getAdView()
-com.ssp.sdk.ad.SspNativeAd: java.lang.String getTitle()
-com.ssp.sdk.ad.SspNativeAd: SspNativeAd(android.content.Context,java.lang.String)
-com.ssp.sdk.ad.BaseAd: void loadAd()
-com.ssp.sdk.ad.SspBannerAd: void resume()
-com.ssp.sdk.ad.SspVideoAd: void enableAutoCache(boolean)
-com.ssp.sdk.data.AdType: AdType(java.lang.String,int)
-com.ssp.sdk.ad.SspBannerAd: void loadAndShow()
-com.ssp.sdk.ad.SspVideoAd: boolean isAutoCacheEnabled()
 com.ssp.sdk.ad.SspBannerAd: void loadAd()
+com.ssp.sdk.ad.BaseAd: void loadAd()
+com.ssp.sdk.ad.SspNativeAd: java.lang.Double getRating()
+com.ssp.sdk.ad.SspVideoAd: void showAd(android.app.Activity)
+com.ssp.sdk.ad.SspNativeAd: SspNativeAd(android.content.Context,java.lang.String)
+com.ssp.sdk.ad.SspVideoAd: com.ssp.sdk.data.AdType getAdType()
+com.ssp.sdk.ad.SspLoadListener: void onAdFailed(java.lang.String)
+com.ssp.sdk.ad.BaseAd: boolean isValid()
+com.ssp.sdk.ad.SspNativeAd: java.lang.String getTitle()
+com.ssp.sdk.SspSdk: boolean isInitialized()
+com.ssp.sdk.ad.SspNativeAd: java.lang.String getCallToAction()
+com.ssp.sdk.ad.SspBannerAd: void pause()
+com.ssp.sdk.ad.SspFullScreenVideoActivity: void onDestroy()
+com.ssp.sdk.ad.SspInteractionListener: void onAdClicked(java.lang.String)
+com.ssp.sdk.ad.SspBannerAd: void setInteractionListener(com.ssp.sdk.ad.SspInteractionListener)
+com.ssp.sdk.ad.SspFullScreenVideoActivity: void onResume()
+com.ssp.sdk.ad.SspVideoAd: SspVideoAd(android.content.Context,java.lang.String)
+com.ssp.sdk.ad.SspBannerAd: void setAutoRefresh(boolean)
+com.ssp.sdk.ad.BaseAd: void setInteractionListener(com.ssp.sdk.ad.SspInteractionListener)
+com.ssp.sdk.ad.SspNativeAd: java.lang.String getImageUrl()
+com.ssp.sdk.ad.SspBannerAd: SspBannerAd(android.content.Context)
+com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType[] values()
+com.ssp.sdk.data.AdType: com.ssp.sdk.data.AdType valueOf(java.lang.String)
 com.ssp.sdk.ad.SspBannerAd: SspBannerAd(android.content.Context,android.util.AttributeSet)
+com.ssp.sdk.ad.SspVideoAd: void show(android.view.ViewGroup)
+com.ssp.sdk.ad.SspBannerAd: void setLoadListener(com.ssp.sdk.ad.SspLoadListener)
+com.ssp.sdk.ad.SspInteractionListener: void onImpression(java.lang.String)
+com.ssp.sdk.SspSdk: java.lang.String getAppId()
+com.ssp.sdk.ad.SspBannerAd: boolean isValid()

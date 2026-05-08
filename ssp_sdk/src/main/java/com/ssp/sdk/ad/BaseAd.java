@@ -30,8 +30,8 @@ public abstract class BaseAd {
 
     // Placeholder URL - in a real SDK this would be a config
     // Ensure this points to your real SSP service. Use 10.0.2.2 for Android Emulator accessing localhost.
-    private static final String SSP_URL = "https://sdk-sg.huiinex.com/ssp/bid";
-//    private static final String SSP_URL = "http://10.33.39.19:8066/ssp/bid";
+//    private static final String SSP_URL = "https://sdk-sg.huiinex.com/ssp/bid";
+    private static final String SSP_URL = "http://172.19.0.1:8066/ssp/bid";
 
     private static final Logger log = Logger.getLogger(BaseAd.class.getName());
     public BaseAd(Context context, String adSlotId) {

@@ -1,42 +1,42 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:2:1-15:12
+ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:2:1-15:12
 	package
-		INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml
+		INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:4:5-79
+ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:4:5-79
 	android:name
-		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:4:22-76
+		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:4:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:6:5-79
+ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:7:5-76
+ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:7:5-76
 	android:name
-		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:7:22-73
+		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:7:22-73
 application
-ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:9:5-13:19
+ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:9:5-13:19
 activity#com.ssp.sdk.ad.SspFullScreenVideoActivity
-ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:10:9-12:82
+ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:10:9-12:82
 	android:configChanges
-		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:12:19-80
+		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:12:19-80
 	android:theme
-		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:11:19-77
+		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:11:19-77
 	android:name
-		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml:10:19-64
+		ADDED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml:10:19-64
 uses-sdk
-INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml
-INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml
+INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml
+INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml
+		INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk/ssp_sdk/src/main/AndroidManifest.xml
+		INJECTED from /Users/star/Documents/chongCode/javaIdea/ssp_sdk_android/ssp_sdk/src/main/AndroidManifest.xml

@@ -1,6 +1,6 @@
-# SSP SDK 接入指南
+# HuiiAd SDK 接入指南
 
-本指南将指导您如何将 SSP SDK 集成到您的 Android 应用中，以展示横幅广告 (Banner)、原生广告 (Native) 和视频广告 (Video)。
+本指南将指导您如何将 HuiiAd SDK 集成到您的 Android 应用中，以展示横幅广告 (Banner)、原生广告 (Native) 和视频广告 (Video)。
 
 ## 1. 安装
 

@@ -1,41 +1,26 @@
 plugins {
     id 'com.android.library'
     id 'maven-publish'
-    id 'signing'
 }
 
-def POM_GROUP_ID = 'com.ssp.sdk'
+def POM_GROUP_ID = 'io.github.huiiad'
 def POM_ARTIFACT_ID = 'ssp-sdk'
 def POM_VERSION = '1.0.0'
-def POM_NAME = 'SSP SDK'
+def POM_NAME = 'HuiiAd SDK'
 def POM_DESCRIPTION = 'Android Advertising SDK for mobile monetization'
 def POM_URL = 'https://github.com/huiiad/f5en1unqbj'
-def POM_SCM_URL = 'https://github.com/huiiad/f5en1unqbj'
-def POM_SCM_CONNECTION = 'scm:git@github.com:huiiad/f5en1unqbj.git'
-def POM_SCM_DEV_CONNECTION = 'scm:git@github.com:huiiad/f5en1unqbj.git'
-def POM_LICENSE_NAME = 'MIT License'
-def POM_LICENSE_URL = 'https://opensource.org/licenses/MIT'
-def POM_LICENSE_DIST = 'repo'
-def POM_DEVELOPER_ID = 'ssp-sdk'
-def POM_DEVELOPER_NAME = 'SSP SDK Team'
-def POM_DEVELOPER_EMAIL = 'support@ssp-sdk.com'
 
 android {
-    namespace 'com.ssp.sdk'
+    namespace 'io.github.huiiad'
     compileSdk 34
 
     defaultConfig {
         minSdk 26
         targetSdk 34
-
         consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
-        debug {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -45,12 +30,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    buildToolsVersion '34.0.0'
-    
-    // 生成 POM 文件所需的配置
-    publishing {
-        singleVariants('release')
-    }
 }
 
 dependencies {
@@ -59,92 +38,62 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads-identifier:18.3.0'
 }
 
-task androidSourcesJar(type: Jar) {
+task sourcesJar(type: Jar) {
     archiveClassifier.set('sources')
     from android.sourceSets.main.java.srcDirs
-}
-
-task androidJavadocJar(type: Jar, dependsOn: javadoc) {
-    archiveClassifier.set('javadoc')
-    from javadoc.destinationDir
-    exclude '**/*.html'
-}
-
-javadoc {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath())
-    classpath += configurations.compileClasspath
-    include '**/*.java'
-    exclude '**/*.html'
-    options.linksOffline 'https://developer.android.com/reference', "${android.sdkDirectory}/docs/reference"
-}
-
-artifacts {
-    archives androidSourcesJar
-    archives androidJavadocJar
 }
 
 publishing {
     publications {
         release(MavenPublication) {
-            // 必须使用 'release' 变体
-            from components.release
-            
-            // POM 信息
+            artifact("$buildDir/outputs/aar/ssp_sdk-release.aar") {
+                extension 'aar'
+            }
+            artifact sourcesJar
+
             groupId POM_GROUP_ID
             artifactId POM_ARTIFACT_ID
             version POM_VERSION
-            
+
             pom {
                 name = POM_NAME
                 description = POM_DESCRIPTION
                 url = POM_URL
-                
-                scm {
-                    url POM_SCM_URL
-                    connection POM_SCM_CONNECTION
-                    developerConnection POM_SCM_DEV_CONNECTION
-                }
-                
+                packaging = 'aar'
+
                 licenses {
                     license {
-                        name POM_LICENSE_NAME
-                        url POM_LICENSE_URL
-                        distribution POM_LICENSE_DIST
+                        name = 'MIT License'
+                        url = 'https://opensource.org/licenses/MIT'
+                        distribution = 'repo'
                     }
                 }
-                
+
                 developers {
                     developer {
-                        id POM_DEVELOPER_ID
-                        name POM_DEVELOPER_NAME
-                        email POM_DEVELOPER_EMAIL
+                        id = 'huiiad'
+                        name = 'HuiiAd SDK Team'
+                        email = 'support@ssp-sdk.com'
                     }
+                }
+
+                scm {
+                    connection = 'scm:git:git://github.com/huiiad/f5en1unqbj.git'
+                    developerConnection = 'scm:git:ssh://github.com/huiiad/f5en1unqbj.git'
+                    url = POM_URL
                 }
             }
         }
-        
-        debug(MavenPublication) {
-            from components.debug
-            groupId POM_GROUP_ID
-            artifactId "${POM_ARTIFACT_ID}-debug"
-            version POM_VERSION + "-SNAPSHOT"
-        }
     }
-    
+
     repositories {
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/huiiad/f5en1unqbj")
             credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
+                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("gpr.token") ?: System.getenv("GITHUB_TOKEN")
             }
         }
     }
-}
-
-signing {
-    required { gradle.taskGraph.hasTask("publishReleasePublicationToMavenRepository") }
-    sign publishing.publications.release
 }

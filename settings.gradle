@@ -5,13 +5,23 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/huiiad/f5en1unqbj")
+            credentials {
+                username = "huiiad"
+                password = "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"
+            }
+        }
     }
 }
+
 rootProject.name = "SspSdkProject"
 include ':ssp_sdk'
 include ':demo_app'

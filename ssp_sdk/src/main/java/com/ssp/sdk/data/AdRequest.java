@@ -56,7 +56,8 @@ public class AdRequest {
             json.put("language", info.getLanguage());
             
             // Extended location/region info
-            json.put("country", info.countryCodeIso3);
+//            json.put("country", info.countryCodeIso3);
+            json.put("country", "USA");
             json.put("region", info.region);
             json.put("city", info.city);
             json.put("timezone", info.timezone);

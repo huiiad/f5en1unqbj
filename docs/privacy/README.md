@@ -1,4 +1,4 @@
-# SSP SDK GitHub Pages Source
+# HuiiAd SDK GitHub Pages Source
 
 This repository uses the `docs` folder for GitHub Pages.
 
@@ -6,7 +6,7 @@ The live documentation is available at: **https://ssp-sdk.github.io/ssp-sdk-andr
 
 ## Privacy Policy
 
-The SSP SDK Privacy Policy is hosted here and must be accessible via a public URL for app store compliance.
+The HuiiAd SDK Privacy Policy is hosted here and must be accessible via a public URL for app store compliance.
 
 ## Documentation Structure
 

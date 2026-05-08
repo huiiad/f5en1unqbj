@@ -1,6 +1,6 @@
-# SSP SDK Android Documentation
+# HuiiAd SDK Android Documentation
 
-本目录包含 SSP SDK 的官方文档，用于托管在 GitHub Pages 上。
+本目录包含 HuiiAd SDK 的官方文档，用于托管在 GitHub Pages 上。
 
 ## 目录结构
 

@@ -16,5 +16,6 @@
       "outputFile": "ssp_sdk-debug-androidTest.apk"
     }
   ],
-  "elementType": "File"
+  "elementType": "File",
+  "minSdkVersionForDexing": 26
 }

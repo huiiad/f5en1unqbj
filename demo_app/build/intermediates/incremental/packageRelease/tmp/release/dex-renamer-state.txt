@@ -1,7 +1,0 @@
-#Fri Jan 30 15:55:02 CST 2026
-base.0=/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/build/intermediates/dex/release/mergeDexRelease/classes.dex
-base.1=/Users/star/Documents/chongCode/javaIdea/ssp_sdk/demo_app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
-path.0=classes.dex
-path.1=classes2.dex
-renamed.0=classes.dex
-renamed.1=classes2.dex
