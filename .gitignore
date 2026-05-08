@@ -1,11 +1,42 @@
-
-.gradle
-.idea
-.trea
-.vscode
+# Gradle
+.gradle/
 build/
+gradle-app.setting
+*.class
+*.jar
+*.war
+*.ear
 
-/.trae/
-/.vscode/
-/.idea/
-/build/
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+
+# Android Studio
+*.apk
+*.aab
+*.dex
+*.ap_
+*.apk
+captures/
+
+# Local config (contains tokens)
+gradle.properties.local
+local.properties
+
+# Secrets
+*.pem
+*.key
+secring.gpg
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
