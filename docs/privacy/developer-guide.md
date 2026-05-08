@@ -1,14 +1,14 @@
-# SSP SDK 开发者隐私合规指南
+# HuiiAd SDK 开发者隐私合规指南
 
 ## 概述
 
-本指南旨在帮助开发者正确集成 SSP SDK，并确保符合隐私保护法规的要求。本指南作为 [SSP SDK 隐私权政策](privacy-policy) 的补充，提供具体的实施建议和最佳实践。
+本指南旨在帮助开发者正确集成 HuiiAd SDK，并确保符合隐私保护法规的要求。本指南作为 [HuiiAd SDK 隐私权政策](privacy-policy) 的补充，提供具体的实施建议和最佳实践。
 
 ## 隐私合规清单
 
 ### 必检项
 
-- [ ] 在应用隐私政策中披露 SSP SDK 数据收集
+- [ ] 在应用隐私政策中披露 HuiiAd SDK 数据收集
 - [ ] 实施最终用户同意机制
 - [ ] 提供用户退出广告追踪的选项
 - [ ] 未满 13 岁儿童应用需额外处理
@@ -28,7 +28,7 @@
 ```markdown
 ## 广告服务
 
-我们的应用集成了第三方广告 SDK（SSP SDK），用于在应用中展示广告。在提供广告服务的过程中，SSP SDK 可能会收集以下信息：
+我们的应用集成了第三方广告 SDK（HuiiAd SDK），用于在应用中展示广告。在提供广告服务的过程中，HuiiAd SDK 可能会收集以下信息：
 
 - **设备信息**：设备品牌、型号、屏幕尺寸、操作系统版本
 - **广告标识符**：Google 广告 ID (GAID)
@@ -45,7 +45,7 @@
 - 设备设置 > Google > 广告 > 退出广告个性化
 - 或联系：privacy@ssp-sdk.com
 
-详情请参阅：[SSP SDK 隐私权政策](https://ssp-sdk.github.io/ssp-sdk-android/privacy-policy)
+详情请参阅：[HuiiAd SDK 隐私权政策](https://ssp-sdk.github.io/ssp-sdk-android/privacy-policy)
 ```
 
 ### 儿童应用附加要求
@@ -174,9 +174,9 @@ public void onRequestPermissionsResult(int requestCode, String[] permissions, in
 
 ## 常见问题
 
-### Q: SSP SDK 会收集哪些敏感信息？
+### Q: HuiiAd SDK 会收集哪些敏感信息？
 
-**A:** SSP SDK 会收集：
+**A:** HuiiAd SDK 会收集：
 - 广告标识符（GAID）
 - IP 地址
 - 设备信息（品牌、型号、屏幕尺寸）
